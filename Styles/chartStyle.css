@@ -1,0 +1,415 @@
+/*****IMAGES*****IMAGES*****IMAGES*****IMAGES*****/
+	
+	#logo {
+		
+		width: 50px;
+		height: 48px;
+		margin-left: 25px;
+		
+	}
+	
+	#img1 {
+		
+		width: 85%;
+		height: 200px;
+		
+	}
+	
+	#img2 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img3 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img4 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img5 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img6 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img7 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img8 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img9 {
+		
+		width: 85%;
+		height: 125px;
+		
+	}
+	
+	#img10 {
+		
+		width: 85%;
+		height: 150px;
+		
+	}
+	
+	#img11 {
+		
+		width: 85%;
+		height: 150px;
+		
+	}
+	
+	#img12 {
+		
+		width: 85%;
+		height: 150px;
+		
+	}
+	
+	#img13 {
+		
+		width: 85%;
+		height: 200px;
+		
+	}
+	
+	#img14 {
+		
+		width: 85%;
+		height: 200px;
+		
+	}
+	
+	#img15 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img16 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img17 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img18 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img19 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img20 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	#img21 {
+		
+		width: 85%;
+		height: 300px;
+		
+	}
+	
+	@media screen and (max-width: 800px) {
+		
+		#img1 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img2 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img3 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img4 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img5 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img6 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img7 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img8 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img9 {
+			
+			width: 100%;
+			height: 75px;
+			
+		}
+		
+		#img10 {
+			
+			width: 100%;
+			height: 110px;
+			
+		}
+		
+		#img11 {
+			
+			width: 100%;
+			height: 130px;
+			
+		}
+		
+		#img12 {
+			
+			width: 100%;
+			height: 80px;
+			
+		}
+		
+		#img13 {
+			
+			width: 100%;
+			height: 130px;
+			
+		}
+		
+		#img14 {
+			
+			width: 100%;
+			height: 130px;
+			
+		}
+		
+		#img15 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img16 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img17 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img18 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img19 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img20 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+		#img21 {
+			
+			width: 100%;
+			height: 150px;
+			
+		}
+		
+	}
+	
+/*****IMAGES*****IMAGES*****IMAGES*****IMAGES*****/
+	
+/*****BODY*****BODY*****BODY*****BODY*****/
+	
+	html body {
+		
+		background: #f1f1f1;
+		margin: 0;
+		
+	}
+	
+	.body {
+		
+		font-family: Arial;
+		padding: 70px;
+		line-height: 200%;
+		text-shadow: 1px 1px rgb(230, 230, 230);
+		
+	}
+	
+	.header {
+		
+		padding: 30px;
+		text-align: center;
+		background: white;
+		color: rgb(70, 100, 180);
+		box-shadow: /*dx*/ 3px /*dy*/ 3px /*Blur(A)*/ 7px /*dA*/ 1px gray;
+		
+	}
+	
+	.row1_col0 {
+		
+		float: left;
+		width: 100%;
+		
+	}
+	
+	.row1_col1 {
+		
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	.element {
+		
+		background-color: white;
+		padding: 20px;
+		margin-top: 20px;
+		
+	}
+	
+	.row1_col0 .element {
+		
+		box-shadow: /*dx*/ 3px /*dy*/ 3px /*Blur(A)*/ 7px /*dA*/ 1px gray;
+		
+	}
+	
+	.row1_col1 .element {
+		
+		box-shadow: /*dx*/ 3px /*dy*/ 3px /*Blur(A)*/ 7px /*dA*/ 1px rgba(0, 255, 255, 0.2);;
+		
+	}
+	
+	.middle:after {
+
+		content: "";
+		display: table;
+		clear: both;
+		
+	}
+	
+	.footer {
+
+		padding: 20px;
+		text-align: center;
+		background: #AAA;
+		margin-top: 20px;
+		
+	}
+	
+	@media screen and (max-width: 800px) {
+		
+		.body {
+			
+			padding-left: 40px;
+			padding-right: 40px;
+			
+		}
+		
+		.row1_col0, .row1_col1 {   
+		
+			width: 100%;
+			padding: 0;
+			
+		}
+		
+	}
+	
+	.check {
+		
+		cursor: pointer;
+		
+	}
+	
+/*****BODY*****BODY*****BODY*****BODY*****/

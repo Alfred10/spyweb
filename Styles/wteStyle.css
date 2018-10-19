@@ -1,0 +1,99 @@
+/*****BODY*****BODY*****BODY*****BODY*****/
+	
+	html body {
+		
+		background: #f1f1f1;
+		margin: 0;
+		
+	}
+	
+	.body {
+		
+		font-family: Arial;
+		padding: 70px;
+		line-height: 200%;
+		text-shadow: 1px 1px rgb(230, 230, 230);
+		
+	}
+	
+	.header {
+		
+		padding: 30px;
+		text-align: center;
+		background: white;
+		color: rgb(70, 100, 180);
+		box-shadow: /*dx*/ 3px /*dy*/ 3px /*Blur(A)*/ 7px /*dA*/ 1px gray;
+		
+	}
+	
+	.row1_col0 {
+		
+		float: left;
+		width: 100%;
+		
+	}
+	
+	.row1_col1 {
+		
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	.element {
+		
+		background-color: white;
+		padding: 20px;
+		margin-top: 20px;
+		
+	}
+	
+	.row1_col0 .element {
+		
+		box-shadow: /*dx*/ 3px /*dy*/ 3px /*Blur(A)*/ 7px /*dA*/ 1px gray;
+		
+	}
+	
+	.row1_col1 .element {
+		
+		box-shadow: /*dx*/ 3px /*dy*/ 3px /*Blur(A)*/ 7px /*dA*/ 1px rgba(0, 255, 255, 0.2);;
+		
+	}
+	
+	.middle:after {
+
+		content: "";
+		display: table;
+		clear: both;
+		
+	}
+	
+	.footer {
+
+		padding: 20px;
+		text-align: center;
+		background: #AAA;
+		margin-top: 20px;
+		
+	}
+	
+	@media screen and (max-width: 800px) {
+		
+		.body {
+			
+			padding-left: 40px;
+			padding-right: 40px;
+			
+		}
+		
+		.row1_col0, .row1_col1 {   
+		
+			width: 100%;
+			padding: 0;
+			
+		}
+		
+	}
+	
+/*****BODY*****BODY*****BODY*****BODY*****/
