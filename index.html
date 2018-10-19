@@ -1,0 +1,323 @@
+<!doctype html>
+
+<html lang = "en-US">
+
+	<head>
+		
+		<style>
+			
+			@charset "UTF-8";
+			
+			* {
+				
+				box-sizing: border-box;
+				
+			}
+			
+			.nav a:nth-of-type(3):not(.chap1):not(.chap2) {
+				
+				background-color: rgb(68, 136, 205);
+				
+			}
+
+		</style>
+		
+		<meta name = "author" content = "Alfred Barlotta">
+		<meta charset = "utf-8">
+		<meta http-equiv = "X-UA-Compatible" content = "IE=EmulateIE9">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<meta name = "keywords" content = "stocks, invest, learn, money, business">
+		
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "stylesheet" type = "text/css" href = "Styles/navigation.css">
+		<link rel = "stylesheet" type = "text/css" href = "Styles/indexStyle.css">
+		<script src = "Scripts/navScript.js"></script>
+		
+		<title>SPYweb - Home</title>
+		
+	</head>
+	
+	<div class = "nav" id = "nav">
+		
+		<img id = "logo" src = "Images/Home_Images/logo.png" style = "float: left;">
+		
+		<a href = "javascript:void(0);" style = "font-size: 16px;" class = "icon" onclick = "changeClassName()">&#x2630;</a>
+		
+		<a href = "javascript:void(0);" class = "placeholder">&emsp;</a>
+		<a href = "index.html" class = "home">Home</a>
+		
+		<div class = "dropdown" style = "background-color: rgb(50, 50, 50);">
+			
+			<button class = "dropbtn" onclick = "present('chap1')">
+				
+				Chapter 1: Basics <i class = "fa fa-caret-down"></i>
+				
+			</button>
+			
+			<div class = "dropdown-content" id = "chap1">
+				
+				<a href = "chart.html" class = "chap1">Section 1</a>
+				<a href = "news.html" class = "chap1">Section 2</a>
+				<a href = "start.html" class = "chap1">Section 3</a>
+				<a href = "sum.html" class = "chap1">Section 4</a>
+				
+			</div>
+			
+		</div>
+		
+		<div class = "dropdown">
+			
+			<button class = "dropbtn" onclick = "present('chap2')"> 
+				
+				Chapter 2: Day Trading (Coming Soon) <i class = "fa fa-caret-down"></i>
+				
+			</button>
+			
+			<div class = "dropdown-content" id = "chap2">
+				
+				<a href = "wte.html" class = "chap2">What to Expect</a>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<div id = "image_container">
+		
+		<img id = "image1" src = "Images/Home_Images/b0.jpeg">
+		
+	</div>
+	
+	<body>
+		
+		<div class = "body">
+			
+			<div class = "header">
+				
+				<h1>Welcome to SPYweb</h1>
+				
+			</div>
+			
+			<div class = "middle">
+			
+				<div class = "row1_col0">
+					
+					<div class = "element">
+						
+						<h2><a href = "chart.html">Introduction to Technicals</a></h2>
+						
+						<h5>Chapter 1, Section 1</h5>
+						
+						<p>
+							
+							This section will include information regarding the uses of indicators, charts and other technical aspects. With the combined use of all of these features, analyzing a chart will become more familiar and easier to comprehend. Please remember that this will not cover 100% of all technical variables, only the ones I see value in.
+							
+						</p>
+						
+						<p>
+							
+							The following topics will be covered in this section:
+							
+						</p>
+						
+						<ul>
+							
+							<li>indicators (RSI, MACD, EMA, SMA, VWAP);</li>
+							<li>volume;</li>
+							<li>candles;</li>
+							<li>support levels;</li>
+							<li>resistance levels;</li>
+							<li>rejections;</li>
+							<li>confirmations;</li>
+							<li>trends;</li>
+							<li>breakouts.</li>
+							
+						</ul>
+						
+					</div>
+					
+					<div class = "element">
+					
+						<h2><a href = "news.html">News and Futures</a></h2>
+						
+						<h5>Chapter 1, Section 2</h5>
+						
+						<p>
+							
+							This section will include information regarding news and futures. These topics are vital to the success of technical traders. Understanding news and how it affects a stock's movement is crucial to comprehend random fluctuations of a stocks price. Additionally, futures are  another part of the puzzle to determine where a stock might move. These come as almost replicas of certain ETFs to help predict the next move.
+							
+						</p>
+						
+						<p>
+							
+							The following topics will be covered in this section:
+							
+						</p>
+						
+						<ul>
+							
+							<li>news;</li>
+							<li>futures;</li>
+							<li>short selling;</li>
+							<li>dip buying;</li>
+							<li>inverse effect;</li>
+							<li>correlated ETFs.</li>
+							
+						</ul>
+						
+					</div>
+					
+					<div class = "element">
+					
+						<h2><a href = "start.html">Getting Started</a></h2>
+						
+						<h5>Chapter 1, Section 3</h5>
+						
+						<p>
+							
+							Excited to get started? In this section you will learn the differences between brokers and the first steps into placing your first trade!
+							
+						</p>
+						
+						<p>
+							
+							In this section, you will learn:
+							
+						</p>
+						
+						<ul>
+							
+							<li>how to trade with <b>fake</b> money;</li>
+							<li>how to set up a brokerage account;</li>
+							<li>the pros and cons of the free brokerages;</li>
+							<li>the many different account types.</li>
+							
+						</ul>
+						
+					</div>
+					
+					<div class = "element">
+					
+						<h2><a href = "sum.html">Conclusion of Chapter 1</a></h2>
+						
+						<h5>Chapter 1, Section 4</h5>
+						
+						<p>
+							
+							Here, we discuss some tips and strategies to keep in mind before you begin investing in stocks.
+							
+						</p>
+						
+					</div>
+				
+				</div>
+				
+				<div class = "row1_col1">
+					
+					<div class = "element">
+						
+						<h3>Like This Website?</h3>
+						
+						<p>
+							
+							Consider sharing the website with friends and family to support this project.
+							
+						</p>
+						
+					</div>
+					
+					<div class = "element">
+						
+						<h3>Contact Information</h2>
+						
+						<p>
+							
+							To help support the further development of our project, we greatly appreciate any honest feedback towards this course.
+							
+						</p>
+						
+						<p>
+							
+							<b>Email:</b> <a href = "mailto:joe.friia@aol.com" class = "wrappable_link">joe.friia@aol.com</a>
+							
+						</p>
+						
+					</div>
+					
+					<div class = "element">
+						
+						<h3>Want to trade live with me or see my daily watchlist?</h3>
+						
+						<p>
+							
+							Subscribe to me on YouTube!
+					
+						</p>
+				
+						<p>
+							
+							<b>YouTube:</b> <a href = "https://www.youtube.com/channel/UCAvsG2ESUjmxlASTdfvp-4A" class = "wrappable_link">Joseph Friia</a>
+							
+						</p>
+						
+					</div>
+					
+					<div class = "element">
+						
+						<h3>Want to be notified on future projects or see my weekly trading re-caps?</h3>
+						
+						<p>
+							
+							Follow Me on Instagram!
+							
+						</p>
+				
+						<p>
+							
+							<b>Instagram:</b> <a href = "https://www.instagram.com/_themarketmaker/" class = "wrappable_link">@_themarketmaker</a>
+							
+						</p>
+						
+					</div>
+					
+					<div class = "element">
+						
+						<h3>Feeling Generous?</h3>
+						
+						<p>
+							
+							Consider showing your appreciation by donating to help fund our future complimentary trading courses. Any amount will be immensely appreciated.
+							
+						</p>
+						
+						<div align = "center" id = "btn">
+							
+							<form action = "https://www.paypal.com/cgi-bin/webscr" method = "post" target = "_top">
+								
+								<input type = "hidden" name = "cmd" value = "_s-xclick">
+								<input type = "hidden" name = "hosted_button_id" value = "U9F9X33K9F5VN">
+								<input type = "image" src = "https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border = "0" name = "submit" alt = "PayPal - The safer, easier way to pay online!">
+								<img alt = "" border = "0" src = "https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width = "1" height = "1">
+								
+							</form>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<div class = "footer">
+				
+				<h2><i>Made with HTML, CSS, and JS</i></h2>
+				
+			</div>
+
+		</div>
+		
+	</body>
+	
+</html>
