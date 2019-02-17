@@ -1,332 +1,613 @@
 <!doctype html>
 
 <html lang = "en-US">
-
+	
 	<head>
 		
-		<style>
-			
-			@charset "UTF-8";
-			
-			* {
-				
-				box-sizing: border-box;
-				
-			}
-			
-			.nav a:nth-of-type(3):not(.chap1):not(.chap2) {
-				
-				background-color: rgb(68, 136, 205);
-				
-			}
-
-		</style>
-		
-		<meta name = "author" content = "Alfred">
+		<meta name = "author" content = "Alfred Barlotta">
 		<meta charset = "utf-8">
-		<meta http-equiv = "X-UA-Compatible" content = "IE=EmulateIE9">
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-		<meta name = "keywords" content = "spyweb, stocks, invest, learn, money, business">
-		
-		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel = "stylesheet" type = "text/css" href = "Styles/navigation.css">
-		<link rel = "stylesheet" type = "text/css" href = "Styles/indexStyle.css">
-		<link rel = "stylesheet" type = "text/css" href = "Styles/common.css">
-		
-		<script src = "Scripts/navScript.js" type = "text/javascript"></script>
-		
+		<meta name = "keywords" content = "spyweb, stocks, market, invest, learn, money, business">
+		<meta name = "description" content = "Learn about trading stocks and investing with a simple, straightforward, and interactive website for beginners.">
+		<meta name = "audience" content = "all">
+		<link rel = "stylesheet" type = "text/css" href = "CSS/standard.css">
+		<script src = "JS/appearance.js"></script>
+		<script src = "JS/geometry.js"></script>
+		<script src = "JS/io.js"></script>
+		<script src = "JS/text.js"></script>
+		<script>function isMobileDevice() {return(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));}</script>
+		<script>function isIE() {return(!!document.documentMode);}</script>
+		<script>function isEdge() {return(!isIE() && !!window.StyleMedia);}</script>
 		<title>SPYweb - Home</title>
-		
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script>
-		  (adsbygoogle = window.adsbygoogle || []).push({
-		    google_ad_client: "ca-pub-1458305548479064",
-		    enable_page_level_ads: true
-		  });
-		</script>
 		
 	</head>
 	
-	<div class = "nav" id = "nav">
-		
-		<img id = "logo" src = "Images/Home_Images/logo.png" style = "float: left;">
-		
-		<a href = "javascript:void(0);" style = "font-size: 16px;" class = "icon" onclick = "changeClassName()">&#x2630;</a>
-		
-		<a href = "javascript:void(0);" class = "placeholder">&emsp;</a>
-		<a href = "index.html" class = "home">Home</a>
-		
-		<div class = "dropdown" style = "background-color: rgb(50, 50, 50);">
-			
-			<button class = "dropbtn" onclick = "present('chap1')">
-				
-				Chapter 1: Basics <i class = "fa fa-caret-down"></i>
-				
-			</button>
-			
-			<div class = "dropdown-content" id = "chap1">
-				
-				<a href = "chart.html" class = "chap1">Section 1</a>
-				<a href = "news.html" class = "chap1">Section 2</a>
-				<a href = "start.html" class = "chap1">Section 3</a>
-				<a href = "sum.html" class = "chap1">Section 4</a>
-				
-			</div>
-			
-		</div>
-		
-		<div class = "dropdown">
-			
-			<button class = "dropbtn" onclick = "present('chap2')"> 
-				
-				Chapter 2: Day Trading (Coming Soon) <i class = "fa fa-caret-down"></i>
-				
-			</button>
-			
-			<div class = "dropdown-content" id = "chap2">
-				
-				<a href = "wte.html" class = "chap2">What to Expect</a>
-				
-			</div>
-			
-		</div>
-		
-	</div>
-	
-	<div id = "image_container">
-		
-		<img id = "image1" src = "Images/Home_Images/b0.jpeg">
-		
-	</div>
-	
 	<body>
 		
-		<div class = "body">
+		<noscript><center><div style = "display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -70%); -ms-transform: translate(-50%, -70%); padding: 25px; font-family: arial; font-size: 35px; color: #FFFFFF; text-shadow: -2px 2px 1px #000000; background-color: #3AB8FD; border: 3px solid #000000; border-radius: 5px;"><i><b>If you would like to use this website, please enable JavaScript.</b></i></div></center><style>#pageContent{display:none;}</style></noscript>
+		
+		<div id = "pageContent"><div id = "navigation" style = "text-align: right;">
 			
-			<div class = "header">
+			<a href = "index.html" class = "noHighlight"><img id = "logo" src = "IMG/H/logo.png"></a>
+			<div id = "websiteName" class = "noHighlight"><i><b><a class = "removeDefaultHyperlinkStyle" href = "index.html">SPYweb</a></b></i></div>
+			<div id = "mobile" class = "hidden"><a class = "removeDefaultHyperlinkStyle" href = "index.html"><b>mobile</b></a></div>
+			
+			<div id = "tripleBar" class = "noHighlight" style = "display: inline-block;" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onclick = "toggleClassName('submenu', 'hidden', 'unhiddenBlock');">&#x2630;</div>
+			
+			<div id = "submenu" class = "hidden" style = "text-align: left;">
 				
-				<h1><u>Welcome to SPYweb</u></h1>
+				<a class = "removeDefaultHyperlinkStyle" href = "index.html"><div id = "subLink0" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">Home</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "about_us.html"><div id = "subLink1" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">About Us</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "HTML/contact.html"><div id = "subLink2" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">Contact Us</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "HTML/what's_new.html"><div id = "subLink3" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">What's New</b></div></a>
+				<div id = "subLink4" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onclick = "toggleClassName('down0', 'unhiddenInlineBlock', 'hidden'); toggleClassName('up0', 'hidden', 'unhiddenInlineBlock'); toggleClassName('subLink4subLink0', 'hidden', 'unhiddenBlock'); toggleClassName('subLink4subLink1', 'hidden', 'unhiddenBlock'); toggleClassName('subLink4subLink2', 'hidden', 'unhiddenBlock'); toggleClassName('subLink4subLink3', 'hidden', 'unhiddenBlock');"><b class = "noHighlight">Chapter 1<font id = "down0" class = "unhiddenInlineBlock">&#x25BE;</font><font id = "up0" class = "hidden">&#x25B4;</font></b></div>
+				<a class = "removeDefaultHyperlinkStyle" href = "HTML/chapter1_section1.html"><div id = "subLink4subLink0" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 1</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "HTML/chapter1_section2.html"><div id = "subLink4subLink1" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 2</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "HTML/chapter1_section3.html"><div id = "subLink4subLink2" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 3</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "HTML/chapter1_section4.html"><div id = "subLink4subLink3" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 4</b></div></a>
+				<div id = "subLink5" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onclick = "toggleClassName('down1', 'unhiddenInlineBlock', 'hidden'); toggleClassName('up1', 'hidden', 'unhiddenInlineBlock'); toggleClassName('subLink5subLink0', 'hidden', 'unhiddenBlock'); toggleClassName('subLink5subLink1', 'hidden', 'unhiddenBlock'); toggleClassName('subLink5subLink2', 'hidden', 'unhiddenBlock'); toggleClassName('subLink5subLink3', 'hidden', 'unhiddenBlock');"><b class = "noHighlight">Chapter 2<font id = "down1" class = "unhiddenInlineBlock">&#x25BE;</font><font id = "up1" class = "hidden">&#x25B4;</font></b></div>
+				<a class = "removeDefaultHyperlinkStyle" href = "HTML/chapter2_section1.html"><div id = "subLink5subLink0" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 1</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "HTML/chapter2_section2.html"><div id = "subLink5subLink1" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 2</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "HTML/chapter2_section3.html"><div id = "subLink5subLink2" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 3</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "HTML/chapter2_section4.html"><div id = "subLink5subLink3" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 4</b></div></a>
 				
 			</div>
 			
-			<div class = "middle">
-			
-				<div class = "row1_col0">
-					
-					<div class = "element">
-						
-						<h2><a href = "chart.html">Introduction to Technicals</a></h2>
-						
-						<h5>Chapter 1, Section 1</h5>
-						
-						<p>
-							
-							This section will include information regarding the uses of indicators, charts and other technical aspects. With the combined use of all of these features, analyzing a chart will become more familiar and easier to comprehend. Please remember that this will not cover 100% of all technical variables, only the ones I see value in.
-							
-						</p>
-						
-						<p>
-							
-							The following topics will be covered in this section:
-							
-						</p>
-						
-						<ul>
-							
-							<li>indicators (RSI, MACD, EMA, SMA, VWAP);</li>
-							<li>volume;</li>
-							<li>candles;</li>
-							<li>support levels;</li>
-							<li>resistance levels;</li>
-							<li>rejections;</li>
-							<li>confirmations;</li>
-							<li>trends;</li>
-							<li>breakouts.</li>
-							
-						</ul>
-						
-					</div>
-					
-					<div class = "element">
-					
-						<h2><a href = "news.html">News and Futures</a></h2>
-						
-						<h5>Chapter 1, Section 2</h5>
-						
-						<p>
-							
-							This section will include information regarding news and futures. These topics are vital to the success of technical traders. Understanding news and how it affects a stock's movement is crucial to comprehend random fluctuations of a stocks price. Additionally, futures are  another part of the puzzle to determine where a stock might move. These come as almost replicas of certain ETFs to help predict the next move.
-							
-						</p>
-						
-						<p>
-							
-							The following topics will be covered in this section:
-							
-						</p>
-						
-						<ul>
-							
-							<li>news;</li>
-							<li>futures;</li>
-							<li>short selling;</li>
-							<li>dip buying;</li>
-							<li>inverse effect;</li>
-							<li>correlated ETFs.</li>
-							
-						</ul>
-						
-					</div>
-					
-					<div class = "element">
-					
-						<h2><a href = "start.html">Getting Started</a></h2>
-						
-						<h5>Chapter 1, Section 3</h5>
-						
-						<p>
-							
-							Excited to get started? In this section you will learn the differences between brokers and the first steps into placing your first trade!
-							
-						</p>
-						
-						<p>
-							
-							In this section, you will learn:
-							
-						</p>
-						
-						<ul>
-							
-							<li>how to trade with <b>fake</b> money;</li>
-							<li>how to set up a brokerage account;</li>
-							<li>the pros and cons of the free brokerages;</li>
-							<li>the many different account types.</li>
-							
-						</ul>
-						
-					</div>
-					
-					<div class = "element">
-					
-						<h2><a href = "sum.html">Conclusion of Chapter 1</a></h2>
-						
-						<h5>Chapter 1, Section 4</h5>
-						
-						<p>
-							
-							Here, we discuss some tips and strategies to keep in mind before you begin investing in stocks.
-							
-						</p>
-						
-					</div>
-				
-				</div>
-				
-				<div class = "row1_col1">
-					
-					<div class = "element">
-						
-						<h3>Like This Website?</h3>
-						
-						<p>
-							
-							Consider sharing the website with friends and family to support this project.
-							
-						</p>
-						
-					</div>
-					
-					<div class = "element">
-						
-						<h3>Contact Information</h2>
-						
-						<p>
-							
-							To help support the further development of our project, we greatly appreciate any honest feedback towards this course.
-							
-						</p>
-						
-						<p>
-							
-							<b>Email:</b> <a href = "mailto:joe.friia@aol.com" class = "wrappable_link">joe.friia@aol.com</a>
-							
-						</p>
-						
-					</div>
-					
-					<div class = "element">
-						
-						<h3>Want to trade live with me or see my daily watchlist?</h3>
-						
-						<p>
-							
-							Subscribe to me on YouTube!
-					
-						</p>
-				
-						<p>
-							
-							<b>YouTube:</b> <a href = "https://www.youtube.com/channel/UCAvsG2ESUjmxlASTdfvp-4A" class = "wrappable_link">SpyWeb</a>
-							
-						</p>
-						
-					</div>
-					
-					<div class = "element">
-						
-						<h3>Want to be notified on future projects or see my weekly trading re-caps?</h3>
-						
-						<p>
-							
-							Follow Me on Instagram!
-							
-						</p>
-				
-						<p>
-							
-							<b>Instagram:</b> <a href = "https://www.instagram.com/_themarketmaker/" class = "wrappable_link">@_themarketmaker</a>
-							
-						</p>
-						
-					</div>
-					
-					<div class = "element">
-						
-						<h3>Feeling Generous?</h3>
-						
-						<p>
-							
-							Consider showing your appreciation by donating to help fund our future complimentary trading courses. Any amount will be immensely appreciated.
-							
-						</p>
-						
-						<div align = "center" id = "btn">
-							
-							<form action = "https://www.paypal.com/cgi-bin/webscr" method = "post" target = "_top">
-								
-								<input type = "hidden" name = "cmd" value = "_s-xclick">
-								<input type = "hidden" name = "hosted_button_id" value = "U9F9X33K9F5VN">
-								<input type = "image" src = "https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border = "0" name = "submit" alt = "PayPal - The safer, easier way to pay online!">
-								<img alt = "" border = "0" src = "https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width = "1" height = "1">
-								
-							</form>
-							
-						</div>
-						
-					</div>	
-					
-				</div>
-				
-			</div>
-
-			<div class = "footer">
-				
-				
-				
-			</div>
-
 		</div>
+		
+		<div id = "empty"></div>
+		<img id = "homeImage" src = "IMG/H/home_image.png" class = "noHighlight" style = "z-index: -2;">
+		<div id = "anotherEmpty"></div>
+		
+		<script>
+			
+			// navigation scripts.
+			rectangle("navigation", "fixed", 0, 0, "100%", "50px", "#0D86F1");
+			setSize("navigation", "25px");
+			setFont("navigation", "tahoma, geneva, sans-serif");
+			setZIndex("navigation", "100");
+			// logo scripts.
+			rectangle("logo", "fixed", 20, 0, "80px", "50px", "rgba(255, 255, 255, 0)");
+			// websiteName scripts.
+			rectangle("websiteName", "fixed", 100, 10, "0px", "0px", "rgba(255, 255, 255, 0)");
+			setColor("websiteName", "#FFFFFF");
+			setFont("websiteName", "verdana");
+			addTextShadow("websiteName", "-3px", "1px", "0px", "rgba(105, 105, 80, 0.8)");
+			// mobile scripts.
+			if(isMobileDevice()) {
+				
+				changeClassName("mobile", "unhidden");
+				rectangle("mobile", "fixed", 214, 23, "0px", "0px", "rgba(255, 255, 255, 0)");
+				setSize("mobile", "20px");
+				setFont("mobile", "courier new, courier");
+				setColor("mobile", "#FFFFFF");
+				addTextShadow("mobile", "-2px", "1px", "0px", "rgba(105, 105, 80, 0.8)");
+				
+			}
+			// tripleBar scripts.
+			if(isIE()) {
+				
+				setPaddingTRBL("tripleBar", "9px", "12px", "11px", "15px");
+				
+			} else if(isEdge()) {
+				
+				setPaddingTRBL("tripleBar", "7px", "12px", "9px", "15px");
+				
+			} else {
+				
+				setPaddingTRBL("tripleBar", "7px", "12px", "10px", "15px");
+				
+			}
+			setColor("tripleBar", "#FFFFFF");
+			setCursor("tripleBar", "pointer");
+			// Scripts for subLinks.
+			var maxSubmenuHeight = 0;
+			var minSubmenuHeight = 0;
+			for(q = 0; q < 6; q++) {
+				
+				setHeight("subLink" + q, "42px");
+				setPaddingTRBL("subLink" + q, "8px", "12px", "0px", "30px");
+				setColor("subLink" + q, "#FFFFFF");
+				setBackgroundColor("subLink" + q, "#0D86F1");
+				setCursor("subLink" + q, "pointer");
+				maxSubmenuHeight += 50;
+				minSubmenuHeight += 50;
+				
+			}
+			// Scripts for the subLinks of subLinks.
+			for(u = 4; u < 6; u++) {
+				
+				for(v = 0; v < 4; v++) {
+					
+					setHeight("subLink" + u + "subLink" + v, "42px");
+					setPaddingTRBL("subLink" + u + "subLink" + v, "8px", "12px", "0px", "30px");
+					setColor("subLink" + u + "subLink" + v, "#00000");
+					setBackgroundColor("subLink" + u + "subLink" + v, "#E0E0E0");
+					setCursor("subLink" + u + "subLink" + v, "pointer");
+					
+					maxSubmenuHeight += 50;
+				}
+				
+			}
+			// homeImage scripts.
+			rectangle("homeImage", "absolute", 0, 50, "100%", "80%", "rgba(255, 255, 255, 0)");
+			setBoxShadow("homeImage", "0px", "2px", "4px", "0px", "#333333");
+			// empty scripts.
+			setPaddingTRBL("empty", "0px", "0px", "50px", "0px");
+			// anotherEmpty scripts.
+			function updateSpacing() {
+				
+				setMarginTRBL("anotherEmpty", "0px", "0px", getClientHeight("homeImage") + "px", "0px");
+				
+			}
+			setInterval(updateSpacing, 1/*ms*/);
+			// Scripts for responsive design.
+			var executedResponsiveNavigation = false;
+			function responsiveNavigation() {
+				
+				if(window.innerHeight < 700) {
+					
+					setOverflowY("submenu", "scroll");
+					setHeight("submenu", Math.min(minSubmenuHeight, window.innerHeight - 50) + "px");
+					executedResponsiveNavigation = true;
+					
+				}
+				
+				if(executedResponsiveNavigation && window.innerHeight >= 700) {
+					
+					setOverflowY("submenu", "hidden");
+					setHeight("submenu", maxSubmenuHeight + "px");
+					executedResponsiveNavigation = false;
+					
+				}
+				
+			}
+			setInterval(responsiveNavigation, 1/*ms*/);
+			
+		</script>
+		
+		<div id = "webMain">
+			
+			<div id = "webComponent0">
+				
+				<h1 id = "webComponent0Heading"><u>Chapter 1:</u> Introduction to Stocks</h1>
+				
+				<div id = "webComponent0Element0" class = "unhiddenInlineBlock" style = "vertical-align: top;">
+					
+					<img id = "webComponent0Element0Image" src = "IMG/H/webComponent0Element0Image.png">
+					
+					<div id = "webComponent0Element0Heading"><b>1. <a href = "HTML/chapter1_section1.html">Introductory Analysis Methods</a></b></div>
+					
+					<div id = "webComponent0Element0Description">
+						
+						This section covers basic factors to consider when deciding to invest in a stock. These factors include: support and resistance levels, trends, indicators, rejection and confirmation, and candles.
+						
+					</div>
+					
+				</div>
+				
+				<div id = "webComponent0Element1" class = "unhiddenInlineBlock" style = "vertical-align: top;">
+					
+					<img id = "webComponent0Element1Image" src = "IMG/H/webComponent0Element1Image.png">
+					
+					<div id = "webComponent0Element1Heading"><b>2. <a href = "HTML/chapter1_section2.html">News and Futures</a></b></div>
+					
+					<div id = "webComponent0Element1Description">
+						
+						In this section, we discuss news and futures and their influence on the stock market. This includes exchange-traded funds (ETFs) and their associated futures.
+						
+					</div>
+					
+				</div>
+				
+				<div id = "webComponent0Element2" class = "unhiddenInlineBlock" style = "vertical-align: top;">
+					
+					<img id = "webComponent0Element2Image" src = "IMG/H/webComponent0Element2Image.png">
+					
+					<div id = "webComponent0Element2Heading"><b>3. <a href = "HTML/chapter1_section3.html">Getting Started</a></b></div>
+					
+					<div id = "webComponent0Element2Description">
+						
+						Application of the basic methods of analayzing stocks helps to build up confidence and understanding when placing trades. Therefore, it's important to learn how to get started and which trading platform you should use to get started.
+						
+					</div>
+					
+				</div>
+				
+				<div id = "webComponent0Element3" class = "unhiddenInlineBlock" style = "vertical-align: top;">
+					
+					<img id = "webComponent0Element3Image" src = "IMG/H/webComponent0Element3Image.png">
+					
+					<div id = "webComponent0Element3Heading"><b>4. <a href = "HTML/chapter1_section4.html">Conclusion of Chapter 1</a></b></div>
+					
+					<div id = "webComponent0Element3Description">
+						
+						The last section in Chapter 1 goes over what you should have learned from going through the first chapter, and it gives a few tips to help you when you start investing in the market.
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id = "webComponent1">
+				
+				<h1 id = "webComponent1Heading"><u>Chapter 2:</u> Methods of Analysis</h1>
+				
+				<div id = "webComponent1Element0" class = "unhiddenInlineBlock" style = "vertical-align: top;">
+					
+					<img id = "webComponent1Element0Image" src = "IMG/H/webComponent1Element0Image.png">
+					
+					<div id = "webComponent1Element0Heading"><b>1. <a href = "HTML/chapter2_section1.html">Big Picture and Patterns</a></b></div>
+					
+					<div id = "webComponent1Element0Description">
+						
+						In this section, we discuss the idea of big pictures, and we further analayze patterns and the various types you may encounter while trading.
+						
+					</div>
+					
+				</div>
+				
+				<div id = "webComponent1Element1" class = "unhiddenInlineBlock" style = "vertical-align: top;">
+					
+					<img id = "webComponent1Element1Image" src = "IMG/H/webComponent1Element1Image.png">
+					
+					<div id = "webComponent1Element1Heading"><b>2. <a href = "HTML/chapter2_section2.html">Entry, Exit, and Stop Loss</a></b></div>
+					
+					<div id = "webComponent1Element1Description">
+						
+						In this section you will learn the values of entries, exits and stop losses. You will understand how these are utilized in trading and why they are essential to understand in all scenarios of analysis.
+						
+					</div>
+					
+				</div>
+				
+				<div id = "webComponent1Element2" class = "unhiddenInlineBlock" style = "vertical-align: top;">
+					
+					<img id = "webComponent1Element2Image" src = "IMG/H/webComponent1Element2Image.png">
+					
+					<div id = "webComponent1Element2Heading"><b>3. <a href = "HTML/chapter2_section3.html">Step-by-Step Analysis</a></b></div>
+					
+					<div id = "webComponent1Element2Description">
+						
+						This section includes a step-by-step demonstration of everything discussed in this chapter. Going from a naked chart, a chart that has yet to be analysed, to a fully analyzed chart with my ideas of the trade.
+						
+					</div>
+					
+				</div>
+				
+				<div id = "webComponent1Element3" class = "unhiddenInlineBlock" style = "vertical-align: top;">
+					
+					<img id = "webComponent1Element3Image" src = "IMG/H/webComponent1Element3Image.png">
+					
+					<div id = "webComponent1Element3Heading"><b>4. <a href = "HTML/chapter2_section4.html">Personal Trading</a></b></div>
+					
+					<div id = "webComponent1Element3Description">
+						
+						Now that all of the informative material is said, I would like to take some time and share with you all the biggest lessons I've learned from trading. This will be real and honest content when it comes to trading and what's actually going to improve your trading.
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<script>
+			
+			// webMain scripts.
+			setPaddingTRBL("webMain", "35px", "7%", "35px", "7%");
+			// Scripts for webComponents.
+			for(u = 0; u < 2; u++) {
+				
+				// webComponent + u scripts.
+				setTextAlign("webComponent" + u, "center");
+				// webComponent + u + Heading scripts.
+				setSize("webComponent" + u + "Heading", "45px");
+				setColor("webComponent" + u + "Heading", "rgb(3, 90, 255)");
+				setFont("webComponent" + u + "Heading", "arial");
+				
+				for(v = 0; v < 4; v++) {
+					
+					// webComponent + u + Element + v scripts.
+					setWidth("webComponent" + u + "Element" + v, "350px");
+					setBackgroundColor("webComponent" + u + "Element" + v, "#FFFFFF");
+					setBorderRadius("webComponent" + u + "Element" + v, "10px", "10px", "5px", "5px");
+					setBoxShadow("webComponent" + u + "Element" + v, "-1px", "-1px", "10px", "0px", "rgba(0, 0, 0, 0.40)");
+					setMarginTRBL("webComponent" + u + "Element" + v, "20px", "1%", "0px", "0px");
+					setTextAlign("webComponent" + u + "Element" + v, "left");
+					// webComponent + u + Element + v + Image scripts.
+					setWidth("webComponent" + u + "Element" + v + "Image", "100%");
+					setHeight("webComponent" + u + "Element" + v + "Image", "50%");
+					setBorderRadius("webComponent" + u + "Element" + v + "Image", "10px", "10px", "0px", "0px");
+					// webComponent + u + Element + v + Heading scripts.
+					setSize("webComponent" + u + "Element" + v + "Heading", "20px");
+					setFont("webComponent" + u + "Element" + v + "Heading", "arial");
+					setMarginTRBL("webComponent" + u + "Element" + v + "Heading", "10px", "10px", "10px", "10px");
+					// webComponent + u + Element + v + Description scripts.
+					setLineHeight("webComponent" + u + "Element" + v + "Description", "150%");
+					setFont("webComponent" + u + "Element" + v + "Description", "arial");
+					setColor("webComponent" + u + "Element" + v + "Description", "#000000");
+					setMarginTRBL("webComponent" + u + "Element" + v + "Description", "12px", "20px", "0px", "20px");
+					
+				}
+				
+			}
+			// Adjustments for the net clientHeight of each webComponent1Element.
+			var epsilon = 50;
+			var ell = 4;
+			var imageHeightArray0 = new Array(ell);
+			var headingHeightArray0 = new Array(ell);
+			var descriptionHeightArray0 = new Array(ell);
+			for(q = 0; q < ell; q++) {
+				
+				imageHeightArray0[q] = getClientHeight("webComponent0Element" + q + "Image");
+				headingHeightArray0[q] = getClientHeight("webComponent0Element" + q + "Heading");
+				descriptionHeightArray0[q] = getClientHeight("webComponent0Element" + q + "Description");
+				
+			}
+			var imageHeightArray0Maximum = imageHeightArray0[0];
+			var headingHeightArray0Maximum = headingHeightArray0[0];
+			var descriptionHeightArray0Maximum = descriptionHeightArray0[0];
+			for(q = 0; q < ell; q++) {
+				
+				if(imageHeightArray0Maximum < imageHeightArray0[q]) {
+					
+					imageHeightArray0Maximum = imageHeightArray0[q];
+					
+				}
+				
+				if(headingHeightArray0Maximum < headingHeightArray0[q]) {
+					
+					headingHeightArray0Maximum = headingHeightArray0[q];
+					
+				}
+				
+				if(descriptionHeightArray0Maximum < descriptionHeightArray0[q]) {
+					
+					descriptionHeightArray0Maximum = descriptionHeightArray0[q];
+					
+				}
+				
+			}
+			for(q = 0; q < ell; q++) {
+				
+				setHeight("webComponent0Element" + q + "Image", imageHeightArray0Maximum + "px");
+				setHeight("webComponent0Element" + q + "Heading", headingHeightArray0Maximum + "px");
+				setHeight("webComponent0Element" + q + "Description", descriptionHeightArray0Maximum + epsilon + "px");
+				
+			}
+			// Adjustments for the net clientHeight of each webComponent1Element.
+			var ell = 4;
+			var imageHeightArray1 = new Array(ell);
+			var headingHeightArray1 = new Array(ell);
+			var descriptionHeightArray1 = new Array(ell);
+			for(q = 0; q < ell; q++) {
+				
+				imageHeightArray1[q] = getClientHeight("webComponent1Element" + q + "Image");
+				headingHeightArray1[q] = getClientHeight("webComponent1Element" + q + "Heading");
+				descriptionHeightArray1[q] = getClientHeight("webComponent1Element" + q + "Description");
+				
+			}
+			var imageHeightArray1Maximum = imageHeightArray1[0];
+			var headingHeightArray1Maximum = headingHeightArray1[0];
+			var descriptionHeightArray1Maximum = descriptionHeightArray1[0];
+			for(q = 0; q < ell; q++) {
+				
+				if(imageHeightArray1Maximum < imageHeightArray1[q]) {
+					
+					imageHeightArray1Maximum = imageHeightArray1[q];
+					
+				}
+				
+				if(headingHeightArray1Maximum < headingHeightArray1[q]) {
+					
+					headingHeightArray1Maximum = headingHeightArray1[q];
+					
+				}
+				
+				if(descriptionHeightArray1Maximum < descriptionHeightArray1[q]) {
+					
+					descriptionHeightArray1Maximum = descriptionHeightArray1[q];
+					
+				}
+				
+			}
+			var headingError1Index = 0;
+			for(q = 0; q < ell; q++) {
+				
+				if(headingHeightArray1[q] != headingHeightArray1Maximum) {
+					
+					headingError1Index = q;
+					
+				}
+				
+			}
+			for(q = 0; q < ell; q++) {
+				
+				setHeight("webComponent1Element" + q + "Image", imageHeightArray1Maximum + "px");
+				setHeight("webComponent1Element" + q + "Heading", headingHeightArray1Maximum + "px");
+				setHeight("webComponent1Element" + q + "Description", descriptionHeightArray1Maximum + epsilon + "px");
+				
+			}
+			// Scripts for responsive design.
+			var executedResponsiveContent = false;
+			function responsiveContent() {
+				
+				if(window.innerWidth < 560) {
+					
+					for(u = 0; u < 2; u++) {
+						
+						for(v = 0; v < 4; v++) {
+							
+							changeClassName("webComponent" + u + "Element" + v, "unhiddenBlock");
+							setWidth("webComponent" + u + "Element" + v, "100%");
+							
+						}
+						
+					}
+					
+					executedResponsiveContent = true;
+					
+				}
+				
+				if(executedResponsiveContent && window.innerWidth >= 560) {
+					
+					for(u = 0; u < 2; u++) {
+						
+						for(v = 0; v < 4; v++) {
+							
+							changeClassName("webComponent" + u + "Element" + v, "unhiddenInlineBlock");
+							setWidth("webComponent" + u + "Element" + v, "375px");
+							
+						}
+						
+					}
+					
+					executedResponsiveContent = false;
+					
+				}
+				
+			}
+			setInterval(responsiveContent, 1/*ms*/);
+			
+		</script>
+		
+		<div id = "webFooter0">
+			
+			<div id = "webFooter0Component0" class = "unhiddenInlineBlock"  style = "vertical-align: top;">
+				
+				<p><b>Instagram</b></p>
+				
+				<p style = "font-size: 21px;">Want to be notified on future projects or see my weekly trading recaps?</p>
+				
+				<center><div id = "instagramButton" class = "noHighlight" onmouseleave = "if(this.style.boxShadow.indexOf('-') === -1) {setXY(this.id, 2, -2); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');}" onmousedown = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" onmouseup = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" ontouchstart = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" ontouchend = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" onclick = "window.open('https://www.instagram.com/_themarketmaker/');"><b>INSTAGRAM</b></div></center>
+				
+			</div>
+			
+			<div id = "webFooter0Component1" class = "unhiddenInlineBlock"  style = "vertical-align: top;">
+				
+				<p><b>YouTube</b></p>
+				
+				<p style = "font-size: 21px;">Want to trade live with me or see my weekly videos?</p>
+				
+				<center><div id = "youtubeButton" class = "noHighlight" onmouseleave = "if(this.style.boxShadow.indexOf('-') === -1) {setXY(this.id, 2, -2); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');}" onmousedown = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" onmouseup = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" ontouchstart = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" ontouchend = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" onclick = "window.open('https://www.youtube.com/channel/UCAvsG2ESUjmxlASTdfvp-4A');"><b>YOUTUBE</b></div></center>
+				
+			</div>
+			
+		</div>
+		
+		<div id = "webFooter1">
+			
+			<center>
+				
+				<p><b>Feeling Generous?</b></p>
+				
+				<p style = "font-size: 25px; margin-left: 5%; margin-right: 5%;">Consider showing your appreciation by donating to help fund our future complimentary trading courses. Any amount will be immensely appreciated.</p>
+				
+				<form action = "https://www.paypal.com/cgi-bin/webscr" method = "post" target = "_top">
+					
+					<input type = "hidden" name = "cmd" value = "_s-xclick">
+					<input type = "hidden" name = "hosted_button_id" value = "U9F9X33K9F5VN">
+					<input type = "image" src = "https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border = "0" name = "submit" alt = "PayPal - The safer, easier way to pay online!">
+					<img alt = "" border = "0" src = "https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width = "1" height = "1">
+					
+				</form>
+				
+			</center>
+			
+		</div>
+		
+		<div id = "webFooter2">
+			
+			<center style = "margin-left: 1%; margin-right: 1%;"><a class = "removeDefaultHyperlinkStyle" href = "javascript:void(0);"><b><i>SPYweb v:2.0.0</i></b></a></center>
+			
+		</div>
+		
+		<script>
+			
+			// webFooter0 scripts.
+			setSize("webFooter0", "0px");
+			setBackgroundColor("webFooter0", "#035354");
+			setPaddingTRBL("webFooter0", "45px", "0px", "45px", "0px");
+			setMarginTRBL("webFooter0", "100px", "0px", "0px", "0px");
+			// webFooter0Component + q scripts.
+			for(q = 0; q < 2; q++) {
+				
+				setWidth("webFooter0Component" + q, "40%");
+				setColor("webFooter0Component" + q, "#FFFFFF");
+				setSize("webFooter0Component" + q, "25px");
+				setFont("webFooter0Component" + q, "verdana");
+				setPaddingTRBL("webFooter0Component" + q, "0px", "5%", "0px", "5%");
+				setMarginTRBL("webFooter0Component" + q, "0px", "0px", "0px", "0px");
+				
+			}
+			// instagramButton scripts.
+			setWidth("instagramButton", "200px");
+			setPadding("instagramButton", "10px");
+			setBackgroundColor("instagramButton", "#2D97F5");
+			setBoxShadow("instagramButton", "-2px", "2px", "0px", "1px", "#0D57A5");
+			setUniformBorderRadius("instagramButton", "20px");
+			setPositionType("instagramButton", "relative");
+			setCursor("instagramButton", "pointer");
+			// youtubeButton scripts.
+			setWidth("youtubeButton", "200px");
+			setPadding("youtubeButton", "10px");
+			setBackgroundColor("youtubeButton", "#2D97F5");
+			setBoxShadow("youtubeButton", "-2px", "2px", "0px", "1px", "#0D57A5");
+			setUniformBorderRadius("youtubeButton", "20px");
+			setPositionType("youtubeButton", "relative");
+			setCursor("youtubeButton", "pointer");
+			// webFooter1 scripts.
+			setWidth("webFooter1", "100%");
+			setColor("webFooter1", "#FFFFFF");
+			setSize("webFooter1", "30px");
+			setFont("webFooter1", "verdana");
+			setBackgroundColor("webFooter1", "#079597");
+			setPaddingTRBL("webFooter1", "45px", "0px", "45px", "0px");
+			// webFooter2 scripts.
+			setWidth("webFooter2", "100%");
+			setColor("webFooter2", "#FFFFFF");
+			setSize("webFooter2", "30px");
+			setFont("webFooter2", "verdana");
+			setBackgroundColor("webFooter2", "#73C9CB");
+			setPaddingTRBL("webFooter2", "45px", "0px", "45px", "0px");
+			// Scripts for responsive design.
+			var executedResponsiveFooter = false;
+			function responsiveFooter() {
+				
+				if(window.innerWidth < 800) {
+					
+					for(q = 0; q < 2; q++) {
+						
+						changeClassName("webFooter0Component" + q, "unhiddenBlock");
+						setWidth("webFooter0Component" + q, "84%");
+						
+					}
+					
+					executedResponsiveFooter = true;
+					
+				}
+				
+				if(executedResponsiveFooter && window.innerWidth >= 800) {
+					
+					for(q = 0; q < 2; q++) {
+						
+						changeClassName("webFooter0Component" + q, "unhiddenInlineBlock");
+						setWidth("webFooter0Component" + q, "34%");
+						
+					}
+					
+					executedResponsiveFooter = false;
+					
+				}
+				
+			}
+			setInterval(responsiveFooter, 1/*ms*/);
+			
+		</script></div>
 		
 	</body>
 	
