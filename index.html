@@ -320,7 +320,7 @@
 					setTextAlign("webComponent" + u + "Element" + v, "left");
 					// webComponent + u + Element + v + Image scripts.
 					setWidth("webComponent" + u + "Element" + v + "Image", "100%");
-					setHeight("webComponent" + u + "Element" + v + "Image", "50%");
+					setHeight("webComponent" + u + "Element" + v + "Image", "263px");
 					setBorderRadius("webComponent" + u + "Element" + v + "Image", "10px", "10px", "0px", "0px");
 					// webComponent + u + Element + v + Heading scripts.
 					setSize("webComponent" + u + "Element" + v + "Heading", "20px");
@@ -338,26 +338,17 @@
 			// Adjustments for the net clientHeight of each webComponent1Element.
 			var epsilon = 50;
 			var ell = 4;
-			var imageHeightArray0 = new Array(ell);
 			var headingHeightArray0 = new Array(ell);
 			var descriptionHeightArray0 = new Array(ell);
 			for(q = 0; q < ell; q++) {
 				
-				imageHeightArray0[q] = getClientHeight("webComponent0Element" + q + "Image");
 				headingHeightArray0[q] = getClientHeight("webComponent0Element" + q + "Heading");
 				descriptionHeightArray0[q] = getClientHeight("webComponent0Element" + q + "Description");
 				
 			}
-			var imageHeightArray0Maximum = imageHeightArray0[0];
 			var headingHeightArray0Maximum = headingHeightArray0[0];
 			var descriptionHeightArray0Maximum = descriptionHeightArray0[0];
 			for(q = 0; q < ell; q++) {
-				
-				if(imageHeightArray0Maximum < imageHeightArray0[q]) {
-					
-					imageHeightArray0Maximum = imageHeightArray0[q];
-					
-				}
 				
 				if(headingHeightArray0Maximum < headingHeightArray0[q]) {
 					
@@ -373,34 +364,24 @@
 				
 			}
 			for(q = 0; q < ell; q++) {
-				
-				setHeight("webComponent0Element" + q + "Image", imageHeightArray0Maximum + "px");
+
 				setHeight("webComponent0Element" + q + "Heading", headingHeightArray0Maximum + "px");
 				setHeight("webComponent0Element" + q + "Description", descriptionHeightArray0Maximum + epsilon + "px");
 				
 			}
 			// Adjustments for the net clientHeight of each webComponent1Element.
 			var ell = 4;
-			var imageHeightArray1 = new Array(ell);
 			var headingHeightArray1 = new Array(ell);
 			var descriptionHeightArray1 = new Array(ell);
 			for(q = 0; q < ell; q++) {
 				
-				imageHeightArray1[q] = getClientHeight("webComponent1Element" + q + "Image");
 				headingHeightArray1[q] = getClientHeight("webComponent1Element" + q + "Heading");
 				descriptionHeightArray1[q] = getClientHeight("webComponent1Element" + q + "Description");
 				
 			}
-			var imageHeightArray1Maximum = imageHeightArray1[0];
 			var headingHeightArray1Maximum = headingHeightArray1[0];
 			var descriptionHeightArray1Maximum = descriptionHeightArray1[0];
 			for(q = 0; q < ell; q++) {
-				
-				if(imageHeightArray1Maximum < imageHeightArray1[q]) {
-					
-					imageHeightArray1Maximum = imageHeightArray1[q];
-					
-				}
 				
 				if(headingHeightArray1Maximum < headingHeightArray1[q]) {
 					
@@ -415,19 +396,8 @@
 				}
 				
 			}
-			var headingError1Index = 0;
 			for(q = 0; q < ell; q++) {
 				
-				if(headingHeightArray1[q] != headingHeightArray1Maximum) {
-					
-					headingError1Index = q;
-					
-				}
-				
-			}
-			for(q = 0; q < ell; q++) {
-				
-				setHeight("webComponent1Element" + q + "Image", imageHeightArray1Maximum + "px");
 				setHeight("webComponent1Element" + q + "Heading", headingHeightArray1Maximum + "px");
 				setHeight("webComponent1Element" + q + "Description", descriptionHeightArray1Maximum + epsilon + "px");
 				
