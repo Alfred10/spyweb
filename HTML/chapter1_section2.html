@@ -1,0 +1,419 @@
+<!doctype html>
+
+<html lang = "en-US">
+	
+	<head>
+		
+		<meta name = "author" content = "Alfred Barlotta">
+		<meta charset = "utf-8">
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<meta name = "keywords" content = "spyweb, stocks, market, invest, learn, money, business">
+		<meta name = "description" content = "Learn about trading stocks and investing with a simple, straightforward, and interactive website for beginners.">
+		<meta name = "audience" content = "all">
+		<link rel = "stylesheet" type = "text/css" href = "../CSS/standard.css">
+		<script src = "../JS/appearance.js"></script>
+		<script src = "../JS/geometry.js"></script>
+		<script src = "../JS/io.js"></script>
+		<script src = "../JS/text.js"></script>
+		<script>function isMobileDevice() {return(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));}</script>
+		<script>function isIE() {return(!!document.documentMode);}</script>
+		<script>function isEdge() {return(!isIE() && !!window.StyleMedia);}</script>
+		<title>SPYweb - News and Futures</title>
+		
+	</head>
+	
+	<body>
+		
+		<noscript><center><div style = "display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -70%); -ms-transform: translate(-50%, -70%); padding: 25px; font-family: arial; font-size: 35px; color: #FFFFFF; text-shadow: -2px 2px 1px #000000; background-color: #3AB8FD; border: 3px solid #000000; border-radius: 5px;"><i><b>If you would like to use this website, please enable JavaScript.</b></i></div></center><style>#pageContent{display:none;}</style></noscript>
+		
+		<div id = "navigation" style = "text-align: right;">
+			
+			<a href = "../index.html" class = "noHighlight"><img id = "logo" src = "../IMG/H/logo.png"></a>
+			<div id = "websiteName" class = "noHighlight"><i><b><a class = "removeDefaultHyperlinkStyle" href = "../index.html">SPYweb</a></b></i></div>
+			<div id = "mobile" class = "hidden"><a class = "removeDefaultHyperlinkStyle" href = "../index.html"><b>mobile</b></a></div>
+			
+			<div id = "tripleBar" class = "noHighlight" style = "display: inline-block;" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onclick = "toggleClassName('submenu', 'hidden', 'unhiddenBlock');">&#x2630;</div>
+			
+			<div id = "submenu" class = "hidden" style = "text-align: left;">
+				
+				<a class = "removeDefaultHyperlinkStyle" href = "../index.html"><div id = "subLink0" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">Home</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "about_us.html"><div id = "subLink1" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">About Us</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "contact.html"><div id = "subLink2" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">Contact Us</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "what's_new.html"><div id = "subLink3" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">What's New</b></div></a>
+				<div id = "subLink4" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onclick = "toggleClassName('down0', 'unhiddenInlineBlock', 'hidden'); toggleClassName('up0', 'hidden', 'unhiddenInlineBlock'); toggleClassName('subLink4subLink0', 'hidden', 'unhiddenBlock'); toggleClassName('subLink4subLink1', 'hidden', 'unhiddenBlock'); toggleClassName('subLink4subLink2', 'hidden', 'unhiddenBlock'); toggleClassName('subLink4subLink3', 'hidden', 'unhiddenBlock');"><b class = "noHighlight">Chapter 1<font id = "down0" class = "unhiddenInlineBlock">&#x25BE;</font><font id = "up0" class = "hidden">&#x25B4;</font></b></div>
+				<a class = "removeDefaultHyperlinkStyle" href = "chapter1_section1.html"><div id = "subLink4subLink0" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 1</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "chapter1_section2.html"><div id = "subLink4subLink1" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 2</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "chapter1_section3.html"><div id = "subLink4subLink2" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 3</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "chapter1_section4.html"><div id = "subLink4subLink3" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 4</b></div></a>
+				<div id = "subLink5" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onclick = "toggleClassName('down1', 'unhiddenInlineBlock', 'hidden'); toggleClassName('up1', 'hidden', 'unhiddenInlineBlock'); toggleClassName('subLink5subLink0', 'hidden', 'unhiddenBlock'); toggleClassName('subLink5subLink1', 'hidden', 'unhiddenBlock'); toggleClassName('subLink5subLink2', 'hidden', 'unhiddenBlock'); toggleClassName('subLink5subLink3', 'hidden', 'unhiddenBlock');"><b class = "noHighlight">Chapter 2<font id = "down1" class = "unhiddenInlineBlock">&#x25BE;</font><font id = "up1" class = "hidden">&#x25B4;</font></b></div>
+				<a class = "removeDefaultHyperlinkStyle" href = "chapter2_section1.html"><div id = "subLink5subLink0" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 1</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "chapter2_section2.html"><div id = "subLink5subLink1" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 2</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "chapter2_section3.html"><div id = "subLink5subLink2" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 3</b></div></a>
+				<a class = "removeDefaultHyperlinkStyle" href = "chapter2_section4.html"><div id = "subLink5subLink3" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 4</b></div></a>
+				
+			</div>
+			
+		</div>
+		
+		<div id = "empty"></div>
+		
+		<script>
+			
+			// navigation scripts.
+			rectangle("navigation", "fixed", 0, 0, "100%", "50px", "#0D86F1");
+			setSize("navigation", "25px");
+			setFont("navigation", "tahoma, geneva, sans-serif");
+			// logo scripts.
+			rectangle("logo", "fixed", 20, 0, "80px", "50px", "rgba(255, 255, 255, 0)");
+			// websiteName scripts.
+			rectangle("websiteName", "fixed", 100, 10, "0px", "0px", "rgba(255, 255, 255, 0)");
+			setColor("websiteName", "#FFFFFF");
+			setFont("websiteName", "verdana");
+			addTextShadow("websiteName", "-3px", "1px", "0px", "rgba(105, 105, 80, 0.8)");
+			// mobile scripts.
+			if(isMobileDevice()) {
+				
+				changeClassName("mobile", "unhidden");
+				rectangle("mobile", "fixed", 214, 23, "0px", "0px", "rgba(255, 255, 255, 0)");
+				setSize("mobile", "20px");
+				setFont("mobile", "courier new, courier");
+				setColor("mobile", "#FFFFFF");
+				addTextShadow("mobile", "-2px", "1px", "0px", "rgba(105, 105, 80, 0.8)");
+				
+			}
+			// tripleBar scripts.
+			if(isIE()) {
+				
+				setPaddingTRBL("tripleBar", "9px", "12px", "11px", "15px");
+				
+			} else if(isEdge()) {
+				
+				setPaddingTRBL("tripleBar", "7px", "12px", "9px", "15px");
+				
+			} else {
+				
+				setPaddingTRBL("tripleBar", "7px", "12px", "10px", "15px");
+				
+			}
+			setColor("tripleBar", "#FFFFFF");
+			setCursor("tripleBar", "pointer");
+			// Scripts for subLinks.
+			var maxSubmenuHeight = 0;
+			var minSubmenuHeight = 0;
+			for(q = 0; q < 6; q++) {
+				
+				setHeight("subLink" + q, "42px");
+				setPaddingTRBL("subLink" + q, "8px", "12px", "0px", "30px");
+				setColor("subLink" + q, "#FFFFFF");
+				setBackgroundColor("subLink" + q, "#0D86F1");
+				setCursor("subLink" + q, "pointer");
+				maxSubmenuHeight += 50;
+				minSubmenuHeight += 50;
+				
+			}
+			// Scripts for the subLinks of subLinks.
+			for(u = 4; u < 6; u++) {
+				
+				for(v = 0; v < 4; v++) {
+					
+					setHeight("subLink" + u + "subLink" + v, "42px");
+					setPaddingTRBL("subLink" + u + "subLink" + v, "8px", "12px", "0px", "30px");
+					setColor("subLink" + u + "subLink" + v, "#00000");
+					setBackgroundColor("subLink" + u + "subLink" + v, "#E0E0E0");
+					setCursor("subLink" + u + "subLink" + v, "pointer");
+					maxSubmenuHeight += 50;
+					
+				}
+				
+			}
+			// empty scripts.
+			setPaddingTRBL("empty", "0px", "0px", "50px", "0px");
+			// Scripts for responsive design.
+			var executedResponsiveNavigation = false;
+			function responsiveNavigation() {
+				
+				if(window.innerHeight < 700) {
+					
+					setOverflowY("submenu", "scroll");
+					setHeight("submenu", Math.min(minSubmenuHeight, window.innerHeight - 50) + "px");
+					executedResponsiveNavigation = true;
+					
+				}
+				
+				if(executedResponsiveNavigation && window.innerHeight >= 700) {
+					
+					setOverflowY("submenu", "hidden");
+					setHeight("submenu", maxSubmenuHeight + "px");
+					executedResponsiveNavigation = false;
+					
+				}
+				
+			}
+			setInterval(responsiveNavigation, 1/*ms*/);
+			
+		</script>
+		
+		<div id = "webMain">
+			
+			<font id = "sectionName"><b><u>News and Futures</u></b></font>
+			
+			<h1>The Influence of News on the Stock Market</h1>
+			
+			<div id = "div0">
+				
+				<p>Obviously, any sort of catalyst can significantly impact a stocks price. Whether good or bad, news should always be studied before taking a position. When investing in a company, their recent news, rumors or projections are very important. For example, Elon Musk tweeted that he will consider taking Tesla private when the stock hits $420 per share, resulting in a vast amount of controversy surrounding this situation. This kicked out a lot of short sellers moving the stock ~15% almost instantaneously. <b>Short selling</b> is the act of selling shares at a higher price and buying them back at a lower price. In other words, short selling is betting against an equity. So, if one believes a stock will go down, he/she will short the stock in an effort to profit off it's downfall. This was a genius plan from Musk, but had catastrophic effects to Tesla, as several lawsuits were filed. So, if a tweet can make a stock jump 15%, imagine what breaking news can do or how a speech from President Trump can impact a stocks price. Don't worry, finding live news is very simple. Either googling the companies news or clicking the live news section in your broker's account works fine. When checking for news, every hour really isn't essential but being aware often will help decrease some of the risk involved with trading.</p>
+				
+				<p>A very important type of news is earnings reports. These reports display the company's results per quarter of their projected earnings per share. However, even with good earnings, a company's stock can plummit. These are usually the biggest moves in well known companies. That's why knowing when earnings reports are near is vital before taking a position. I recommend to never hold a stock during an earnings play. Either selling your position, or waiting for the next trading day, is the most beneficial. That doesn't mean these earnings don't offer any potential. When a company like Facebook drops twenty to thirty percent in the matter of minutes to days, that presents a dip buying opportunity. A <b>dip buy</b> is the act of buying a stock when it falls a significant amount and offers great margin to retrace back. Sometimes a stock will retrace back in a quickly manner but other times it will take much longer. Either way, dip buying well known companies and understanding the news offers great opportunities with low risk. Remember not getting the whole moves and just taking a small percentage leaves low risk and a greater chance of staying profitable.</p>
+				
+			</div>
+			
+			<h1>Choosing what to Invest in</h1>
+			
+			<div id = "div1">
+				
+				<p>When it comes to what to invest in, it's all in the traders hands. The most important thing a trader can do when investing is doing their own due diligence. In similar terms, not investing based on another person's opinion, and, instead, doing your own research, will result in the most fulfilment and knowledge gain when investing in the stock market. For example, if Jimmy sees value in Twitter, but Phil sees more value in Shopify, the result of both of them investing in different companies is better than both investing in the same one. Throughout the journey, traders will get easily persuaded by a so called "Guru’s" and invest in a company they see no value in and lose money. Going through the "REUSES" steps with most indicators suggesting a good buy leaves small risk especially when one understands the company and its future.</p>
+				
+			</div>
+			
+			<h1>Futures and How to Read Them</h1>
+			
+			<div id = "div2">
+				
+				<p>Understanding futures and how they are related to ETFs are very important. An <b>Exchange Traded Fund</b>, or ETF, is a group of stocks, bonds, commodities, or other publically traded assets. So, if one company within an ETF has major news, the whole ETF will be impacted in some way. Additionally, going in detail with futures is very complicated. So, in simple terms, a <b>futures market</b> consists of contracts between buyers and sellers at a future date. To trade these ETFs and futures, a specific method is invovled. For example, the gold future, /GC, is related to $JNUG and $JDST and the natural gas future, /NG, is related to $UGAZ and $DGAZ. First understanding that one ETF will be respected with the future and the other will be the inverse is very important. For example, $JNUG is respected by /GC, so if /GC goes up $JNUG will go up. Since, $JDST is the inverse of $JNUG, $JDST will always perform opposite of $JNUG and /GC. Same with /NG and $UGAZ being respected by each other and $DGAZ moving in the opposite direction of them both. Understanding that, the futures will have their own pattern and moving averages, so in some cases, a resistance or support can be seen on the correlated future to help further analysis. Looking at the chart below, /NG and $UGAZ look very similar, but $DGAZ appears inversly.</p>
+				
+				<p><u>Future:</u></p>
+				
+				<center><img id = "image0" src = "../IMG/C1S2/image0.png" alt = "0b01101001"></center>
+				
+				<p><u>Respected ETF ($UGAZ):</u></p>
+				
+				<center><img id = "image1" src = "../IMG/C1S2/image1.png" alt = "0b01101001"></center>
+				
+				<p><u>Inverse ETF ($DGAZ):</u></p>
+				
+				<center><img id = "image2" src = "../IMG/C1S2/image2.png" alt = "0b01101001"></center>
+				
+			</div>
+			
+			<h1>Do all Stocks have Futures?</h1>
+			
+			<div id = "div3">
+				
+				<p>No, not every stock will have a future. Mainly natural resources will have a correlated future. Simply researching if the ETF has a future is a great way to determine a possible future.</p>
+				
+			</div>
+			
+			<h1>Additional Information about Futures</h1>
+			
+			<div id = "div4">
+				
+				<p>Futures are very inflicted by news, so if one sees a threat with a nation on a resource, the future and the respected ETF’s can be in trouble. Looking at news for futures is important as well with the technical analysis. Additionally, futures open earlier than the stock market so a lot of action will occur with the correlated ETFs during pre market hours. </p>
+				
+			</div>
+			
+			<h1>Glossary</h1>
+			
+			<div id = "div5">
+				
+				<p><u>Dip buy:</u> the act of buying a stock after it falls a significant amount and offers execptional margin to retrace back.</p>
+				<p><u>Exchange traded fund (ETF):</u> a group of stocks, bonds, commodities or any other publicly traded asset.</p>
+				<p><u>Futures:</u> a market that consists of contracts between buyers and sellers at a future date.</p>
+				<p><u>Short selling:</u> the act of betting against a stock&mdash;selling unowned shares then buying them back.</p>
+				
+			</div>
+			
+		</div>
+		
+		<script>
+			
+			// webMain scripts.
+			setPaddingTRBL("webMain", "35px", "7%", "25px", "7%");
+			setFont("webMain", "arial");
+			setLineHeight("webMain", "200%");
+			// sectionName scripts.
+			setSize("sectionName", "45px");
+			setColor("sectionName", "rgb(3, 90, 255)");
+			// div + q scripts.
+			for(q = 0; q < 6; q++) {
+				
+				setSize("div" + q, "20px");
+				setFont("div" + q, "verdana");
+				
+			}
+			// Scripts for images.
+			for(q = 0; q < 3; q++) {
+				
+				setWidth("image" + q, "75%");
+				
+			}
+			// Scripts for responsive design.
+			var executedResponsiveImage = false;
+			function responsiveImage() {
+				
+				if(window.innerWidth < 800) {
+					
+					for(q = 0; q < 3; q++) {
+						
+						setWidth("image" + q, "100%");
+						
+					}
+					
+					executedResponsiveImage = true;
+					
+				}
+				
+				if(executedResponsiveImage && window.innerWidth >= 800) {
+					
+					for(q = 0; q < 3; q++) {
+						
+						setWidth("image" + q, "75%");
+						
+					}
+					
+					executedResponsiveImage = false;
+					
+				}
+				
+			}
+			setInterval(responsiveImage, 1/*ms*/);
+			
+		</script>
+		
+		<div id = "webFooter0">
+			
+			<div id = "webFooter0Component0" class = "unhiddenInlineBlock"  style = "vertical-align: top;">
+				
+				<p><b>Instagram</b></p>
+				
+				<p style = "font-size: 21px;">Want to be notified on future projects or see my weekly trading recaps?</p>
+				
+				<center><div id = "instagramButton" class = "noHighlight" onmouseleave = "if(this.style.boxShadow.indexOf('-') === -1) {setXY(this.id, 2, -2); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');}" onmousedown = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" onmouseup = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" ontouchstart = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" ontouchend = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" onclick = "window.open('https://www.instagram.com/_themarketmaker/');"><b>INSTAGRAM</b></div></center>
+				
+			</div>
+			
+			<div id = "webFooter0Component1" class = "unhiddenInlineBlock"  style = "vertical-align: top;">
+				
+				<p><b>YouTube</b></p>
+				
+				<p style = "font-size: 21px;">Want to trade live with me or see my weekly videos?</p>
+				
+				<center><div id = "youtubeButton" class = "noHighlight" onmouseleave = "if(this.style.boxShadow.indexOf('-') === -1) {setXY(this.id, 2, -2); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');}" onmousedown = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" onmouseup = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" ontouchstart = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" ontouchend = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" onclick = "window.open('https://www.youtube.com/channel/UCAvsG2ESUjmxlASTdfvp-4A');"><b>YOUTUBE</b></div></center>
+				
+			</div>
+			
+		</div>
+		
+		<div id = "webFooter1">
+			
+			<center>
+				
+				<p><b>Feeling Generous?</b></p>
+				
+				<p style = "font-size: 25px; margin-left: 5%; margin-right: 5%;">Consider showing your appreciation by donating to help fund our future complimentary trading courses. Any amount will be immensely appreciated.</p>
+				
+				<form action = "https://www.paypal.com/cgi-bin/webscr" method = "post" target = "_top">
+					
+					<input type = "hidden" name = "cmd" value = "_s-xclick">
+					<input type = "hidden" name = "hosted_button_id" value = "U9F9X33K9F5VN">
+					<input type = "image" src = "https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border = "0" name = "submit" alt = "PayPal - The safer, easier way to pay online!">
+					<img alt = "" border = "0" src = "https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width = "1" height = "1">
+					
+				</form>
+				
+			</center>
+			
+		</div>
+		
+		<div id = "webFooter2">
+			
+			<center style = "margin-left: 1%; margin-right: 1%;"><a class = "removeDefaultHyperlinkStyle" href = "javascript:void(0);"><b><i>SPYweb v:2.0.0</i></b></a></center>
+			
+		</div>
+		
+		<script>
+			
+			// webFooter0 scripts.
+			setSize("webFooter0", "0px");
+			setBackgroundColor("webFooter0", "#035354");
+			setPaddingTRBL("webFooter0", "45px", "0px", "45px", "0px");
+			setMarginTRBL("webFooter0", "100px", "0px", "0px", "0px");
+			// webFooter0Component + q scripts.
+			for(q = 0; q < 2; q++) {
+				
+				setWidth("webFooter0Component" + q, "40%");
+				setColor("webFooter0Component" + q, "#FFFFFF");
+				setSize("webFooter0Component" + q, "25px");
+				setFont("webFooter0Component" + q, "verdana");
+				setPaddingTRBL("webFooter0Component" + q, "0px", "5%", "0px", "5%");
+				setMarginTRBL("webFooter0Component" + q, "0px", "0px", "0px", "0px");
+				
+			}
+			// instagramButton scripts.
+			setWidth("instagramButton", "200px");
+			setPadding("instagramButton", "10px");
+			setBackgroundColor("instagramButton", "#2D97F5");
+			setBoxShadow("instagramButton", "-2px", "2px", "0px", "1px", "#0D57A5");
+			setUniformBorderRadius("instagramButton", "20px");
+			setPositionType("instagramButton", "relative");
+			setCursor("instagramButton", "pointer");
+			// youtubeButton scripts.
+			setWidth("youtubeButton", "200px");
+			setPadding("youtubeButton", "10px");
+			setBackgroundColor("youtubeButton", "#2D97F5");
+			setBoxShadow("youtubeButton", "-2px", "2px", "0px", "1px", "#0D57A5");
+			setUniformBorderRadius("youtubeButton", "20px");
+			setPositionType("youtubeButton", "relative");
+			setCursor("youtubeButton", "pointer");
+			// webFooter1 scripts.
+			setWidth("webFooter1", "100%");
+			setColor("webFooter1", "#FFFFFF");
+			setSize("webFooter1", "30px");
+			setFont("webFooter1", "verdana");
+			setBackgroundColor("webFooter1", "#079597");
+			setPaddingTRBL("webFooter1", "45px", "0px", "45px", "0px");
+			// webFooter2 scripts.
+			setWidth("webFooter2", "100%");
+			setColor("webFooter2", "#FFFFFF");
+			setSize("webFooter2", "30px");
+			setFont("webFooter2", "verdana");
+			setBackgroundColor("webFooter2", "#73C9CB");
+			setPaddingTRBL("webFooter2", "45px", "0px", "45px", "0px");
+			// Scripts for responsive design.
+			var executedResponsiveFooter = false;
+			function responsiveFooter() {
+				
+				if(window.innerWidth < 800) {
+					
+					for(q = 0; q < 2; q++) {
+						
+						changeClassName("webFooter0Component" + q, "unhiddenBlock");
+						setWidth("webFooter0Component" + q, "84%");
+						
+					}
+					
+					executedResponsiveFooter = true;
+					
+				}
+				
+				if(executedResponsiveFooter && window.innerWidth >= 800) {
+					
+					for(q = 0; q < 2; q++) {
+						
+						changeClassName("webFooter0Component" + q, "unhiddenInlineBlock");
+						setWidth("webFooter0Component" + q, "34%");
+						
+					}
+					
+					executedResponsiveFooter = false;
+					
+				}
+				
+			}
+			setInterval(responsiveFooter, 1/*ms*/);
+			
+		</script></div>
+		
+	</body>
+	
+</html>
