@@ -111,11 +111,13 @@
 					document.getElementById("div" + q).style.fontFamily = "verdana";
 					
 				}
+				
 				for(q = 0; q < 3; q++) {
 					
 					document.getElementById("image" + q).style.width = "75%";
 					
 				}
+				
 				var executedResponsiveImage = false;
 				function responsiveImage() {
 					
@@ -126,9 +128,11 @@
 							document.getElementById("image" + q).style.width = "100%";
 							
 						}
+						
 						executedResponsiveImage = true;
 						
 					}
+					
 					if(executedResponsiveImage && window.innerWidth >= 800) {
 						
 						for(q = 0; q < 3; q++) {
@@ -136,11 +140,13 @@
 							document.getElementById("image" + q).style.width = "75%";
 							
 						}
+						
 						executedResponsiveImage = false;
 						
 					}
 					
 				}
+				
 				setInterval(responsiveImage, 1/*ms*/);
 				
 			</script>

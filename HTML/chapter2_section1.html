@@ -127,11 +127,13 @@
 					document.getElementById("div" + q).style.fontFamily = "verdana";
 					
 				}
+				
 				for(q = 0; q < 4; q++) {
 					
 					document.getElementById("image" + q).style.width = "75%";
 					
 				}
+				
 				var executedResponsiveImage = false;
 				function responsiveImage() {
 					
@@ -142,12 +144,14 @@
 							document.getElementById("image" + q).style.width = "100%";
 							
 						}
+						
 						for(q = 0; q < 2; q++) {
 							
 							document.getElementById("video" + q).style.width = "100%";
 							document.getElementById("video" + q).style.height = "315px";
 							
 						}
+						
 						executedResponsiveImage = true;
 						
 					}
@@ -166,11 +170,13 @@
 							document.getElementById("video" + q).style.height = "515px";
 							
 						}
+						
 						executedResponsiveImage = false;
 						
 					}
 					
 				}
+				
 				setInterval(responsiveImage, 1/*ms*/);
 				
 			</script>
