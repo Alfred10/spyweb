@@ -24,6 +24,12 @@ html body {
 	
 }
 
+.nonWrappable {
+	
+	white-space: nowrap;
+	
+}
+
 .noHighlight {
 	
 	-webkit-touch-callout: none;
