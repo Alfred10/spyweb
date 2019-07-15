@@ -40,21 +40,3 @@ html body {
 	user-select: none;
 	
 }
-
-.hidden {
-	
-	display: none;
-	
-}
-
-.unhiddenBlock {
-	
-	display: block;
-	
-}
-
-.unhiddenInlineBlock {
-	
-	display: inline-block;
-	
-}
