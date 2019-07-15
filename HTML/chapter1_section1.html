@@ -9,24 +9,17 @@
 		<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 		<meta name = "keywords" content = "spyweb, stocks, market, invest, learn, money, business">
-		<meta name = "description" content = "Learn about trading stocks and investing with a simple, straightforward, and interactive website for beginners.">
+		<meta name = "description" content = "This section will discuss the basics of technical analysis by going from support and resistance, to popular indicators that can help improve your trading.">
 		<meta name = "audience" content = "all">
-		<link rel = "stylesheet" type = "text/css" href = "../CSS/standard.css">
-		<script src = "../JS/appearance.js"></script>
-		<script src = "../JS/geometry.js"></script>
+		<link rel = "icon" href = "../IMG/H/logoRGB(0,0,0).png">
 		<script src = "../JS/io.js"></script>
-		<script src = "../JS/text.js"></script>
-		<script>function isMobileDevice() {return(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));}</script>
-		<script>function isIE() {return(!!document.documentMode);}</script>
-		<script>function isEdge() {return(!isIE() && !!window.StyleMedia);}</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127759975-1"></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-127759975-1');
+			
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-127759975-1');
+			
 		</script>
 		<title>SPYweb - Introductory Analysis Methods</title>
 		
@@ -36,548 +29,281 @@
 		
 		<noscript><center><div style = "display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -70%); -ms-transform: translate(-50%, -70%); padding: 25px; font-family: arial; font-size: 35px; color: #FFFFFF; text-shadow: -2px 2px 1px #000000; background-color: #3AB8FD; border: 3px solid #000000; border-radius: 5px;"><i><b>If you would like to use this website, please enable JavaScript.</b></i></div></center><style>#pageContent{display:none;}</style></noscript>
 		
-		<div id = "pageContent"><div id = "navigation" style = "text-align: right;">
+		<div id = "pageContent">
 			
-			<a href = "../index.html" class = "noHighlight"><img id = "logo" src = "../IMG/H/logo.png"></a>
-			<div id = "websiteName" class = "noHighlight"><i><b><a class = "removeDefaultHyperlinkStyle" href = "../index.html">SPYweb</a></b></i></div>
-			<div id = "mobile" class = "hidden"><a class = "removeDefaultHyperlinkStyle" href = "../index.html"><b>mobile</b></a></div>
+			<script src = "../JS/navigation.js"></script>
 			
-			<div id = "tripleBar" class = "noHighlight" style = "display: inline-block;" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onclick = "toggleClassName('submenu', 'hidden', 'unhiddenBlock');">&#x2630;</div>
-			
-			<div id = "submenu" class = "hidden" style = "text-align: left;">
+			<div id = "webMain" style = "line-height: 200%; padding: 35px 7% 25px 7%; font-family: arial;">
 				
-				<a class = "removeDefaultHyperlinkStyle" href = "../index.html"><div id = "subLink0" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">Home</b></div></a>
-				<a class = "removeDefaultHyperlinkStyle" href = "about_us.html"><div id = "subLink1" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">About Us</b></div></a>
-				<a class = "removeDefaultHyperlinkStyle" href = "contact.html"><div id = "subLink2" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">Contact Us</b></div></a>
-				<a class = "removeDefaultHyperlinkStyle" href = "what's_new.html"><div id = "subLink3" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');"><b class = "noHighlight">What's New</b></div></a>
-				<div id = "subLink4" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onclick = "toggleClassName('down0', 'unhiddenInlineBlock', 'hidden'); toggleClassName('up0', 'hidden', 'unhiddenInlineBlock'); toggleClassName('subLink4subLink0', 'hidden', 'unhiddenBlock'); toggleClassName('subLink4subLink1', 'hidden', 'unhiddenBlock'); toggleClassName('subLink4subLink2', 'hidden', 'unhiddenBlock'); toggleClassName('subLink4subLink3', 'hidden', 'unhiddenBlock');"><b class = "noHighlight">Chapter 1<font id = "down0" class = "unhiddenInlineBlock">&#x25BE;</font><font id = "up0" class = "hidden">&#x25B4;</font></b></div>
-				<a class = "removeDefaultHyperlinkStyle" href = "chapter1_section1.html"><div id = "subLink4subLink0" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 1</b></div></a>
-				<a class = "removeDefaultHyperlinkStyle" href = "chapter1_section2.html"><div id = "subLink4subLink1" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 2</b></div></a>
-				<a class = "removeDefaultHyperlinkStyle" href = "chapter1_section3.html"><div id = "subLink4subLink2" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 3</b></div></a>
-				<a class = "removeDefaultHyperlinkStyle" href = "chapter1_section4.html"><div id = "subLink4subLink3" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 4</b></div></a>
-				<div id = "subLink5" onmouseover = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000');" onmouseout = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onmousedown = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" onmouseup = "setBackgroundColor(this.id, '#DFEFFF'); setColor(this.id, '#000000')" ontouchstart = "setBackgroundColor(this.id, '#11B2FF'); setColor(this.id, '#FFFFFF');" ontouchend = "setBackgroundColor(this.id, '#0D86F1'); setColor(this.id, '#FFFFFF');" onclick = "toggleClassName('down1', 'unhiddenInlineBlock', 'hidden'); toggleClassName('up1', 'hidden', 'unhiddenInlineBlock'); toggleClassName('subLink5subLink0', 'hidden', 'unhiddenBlock'); toggleClassName('subLink5subLink1', 'hidden', 'unhiddenBlock'); toggleClassName('subLink5subLink2', 'hidden', 'unhiddenBlock'); toggleClassName('subLink5subLink3', 'hidden', 'unhiddenBlock');"><b class = "noHighlight">Chapter 2<font id = "down1" class = "unhiddenInlineBlock">&#x25BE;</font><font id = "up1" class = "hidden">&#x25B4;</font></b></div>
-				<a class = "removeDefaultHyperlinkStyle" href = "chapter2_section1.html"><div id = "subLink5subLink0" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 1</b></div></a>
-				<a class = "removeDefaultHyperlinkStyle" href = "chapter2_section2.html"><div id = "subLink5subLink1" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 2</b></div></a>
-				<a class = "removeDefaultHyperlinkStyle" href = "chapter2_section3.html"><div id = "subLink5subLink2" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 3</b></div></a>
-				<a class = "removeDefaultHyperlinkStyle" href = "chapter2_section4.html"><div id = "subLink5subLink3" class = "hidden" onmouseover = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF');" onmouseout = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');" onmousedown = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" onmouseup = "setBackgroundColor(this.id, '#282828'); setColor(this.id, '#FFFFFF')" ontouchstart = "setBackgroundColor(this.id, '#31FFC2'); setColor(this.id, '#000000');" ontouchend = "setBackgroundColor(this.id, '#E0E0E0'); setColor(this.id, '#000000');"><b class = "noHighlight">Section 4</b></div></a>
+				<font style = "font-size: 45px; color: rgb(3, 90, 255)"><b><u>Introductory Analysis Methods</u></b></font>
 				
-			</div>
-			
-		</div>
-		
-		<div id = "empty"></div>
-		
-		<script>
-			
-			// navigation scripts.
-			rectangle("navigation", "fixed", 0, 0, "100%", "50px", "#0D86F1");
-			setSize("navigation", "25px");
-			setFont("navigation", "tahoma, geneva, sans-serif");
-			setZIndex("navigation", "100");
-			// logo scripts.
-			rectangle("logo", "fixed", 20, 0, "80px", "50px", "rgba(255, 255, 255, 0)");
-			// websiteName scripts.
-			rectangle("websiteName", "fixed", 100, 10, "0px", "0px", "rgba(255, 255, 255, 0)");
-			setColor("websiteName", "#FFFFFF");
-			setFont("websiteName", "verdana");
-			addTextShadow("websiteName", "-3px", "1px", "0px", "rgba(105, 105, 80, 0.8)");
-			// mobile scripts.
-			if(isMobileDevice()) {
+				<h1>Support and Resistance Levels</h1>
 				
-				changeClassName("mobile", "unhidden");
-				rectangle("mobile", "fixed", 190, 23, "0px", "0px", "rgba(255, 255, 255, 0)");
-				setSize("mobile", "20px");
-				setFont("mobile", "courier new, courier");
-				setColor("mobile", "#FFFFFF");
-				addTextShadow("mobile", "-2px", "1px", "0px", "rgba(105, 105, 80, 0.8)");
-				
-			}
-			// tripleBar scripts.
-			if(isIE()) {
-				
-				setPaddingTRBL("tripleBar", "9px", "12px", "11px", "15px");
-				
-			} else if(isEdge()) {
-				
-				setPaddingTRBL("tripleBar", "7px", "12px", "9px", "15px");
-				
-			} else {
-				
-				setPaddingTRBL("tripleBar", "7px", "12px", "10px", "15px");
-				
-			}
-			setColor("tripleBar", "#FFFFFF");
-			setCursor("tripleBar", "pointer");
-			// Scripts for subLinks.
-			var maxSubmenuHeight = 0;
-			var minSubmenuHeight = 0;
-			for(q = 0; q < 6; q++) {
-				
-				setHeight("subLink" + q, "42px");
-				setPaddingTRBL("subLink" + q, "8px", "12px", "0px", "30px");
-				setColor("subLink" + q, "#FFFFFF");
-				setBackgroundColor("subLink" + q, "#0D86F1");
-				setCursor("subLink" + q, "pointer");
-				maxSubmenuHeight += 50;
-				minSubmenuHeight += 50;
-				
-			}
-			// Scripts for the subLinks of subLinks.
-			for(u = 4; u < 6; u++) {
-				
-				for(v = 0; v < 4; v++) {
+				<div id = "div0">
 					
-					setHeight("subLink" + u + "subLink" + v, "42px");
-					setPaddingTRBL("subLink" + u + "subLink" + v, "8px", "12px", "0px", "30px");
-					setColor("subLink" + u + "subLink" + v, "#00000");
-					setBackgroundColor("subLink" + u + "subLink" + v, "#E0E0E0");
-					setCursor("subLink" + u + "subLink" + v, "pointer");
-					maxSubmenuHeight += 50;
+					<p>When looking at a chart, confusion can often occur, as many lines, numbers and colors approach you. That's why this course is going to be in the words of a beginner and not of a Wall Street broker. It’s pretty simple, buy low and sell high&mdash;the same as selling cars or shoes, for example. The material discussed will help you trade with the least amount of time involved, helping you as a part time trader. So, let’s start off with support and resistance levels.</p>
 					
-				}
-				
-			}
-			// empty scripts.
-			setPaddingTRBL("empty", "0px", "0px", "50px", "0px");
-			// Scripts for responsive design.
-			var executedResponsiveNavigation = false;
-			function responsiveNavigation() {
-				
-				if(window.innerHeight < 700) {
+					<p>First and foremost, determining where the support and resistance levels are is high priority. <b>Support levels</b> are levels of which the stock hit then rejected up. This level should be a good indication of where a good buy is and not a good sell. A conservative trader will create their support level where the stock hit many times to lower their risk. A more risky trader will set this level further down where the stock hit a few times, producing more risk but more return. So, understanding support levels, and understanding levels of resistance, are the completely opposite. <b>Resistance levels</b> are levels in which the stock hit then rejected back down. These levels will give a good sell point and not a good buy. Risky traders will also set this level high, leaving more margin but greater risk. Remember, these levels will never be exact down to the penny, so if the stock moves a little past these levels, don’t panic; just keep a close eye!</p>
 					
-					setOverflowY("submenu", "scroll");
-					setHeight("submenu", Math.min(minSubmenuHeight, window.innerHeight - 50) + "px");
-					executedResponsiveNavigation = true;
+					<p>The top red line is the resistance level and the bottom red line is the support level.</p>
 					
-				}
-				
-				if(executedResponsiveNavigation && window.innerHeight >= 700) {
+					<center><img id = "image0" src = "../IMG/C1S1/image0.png" alt = "support and resistance lines"></center>
 					
-					setOverflowY("submenu", "hidden");
-					setHeight("submenu", maxSubmenuHeight + "px");
-					executedResponsiveNavigation = false;
+				</div>
+				
+				<h1>Uptrend, Downtrend, and Consolidation</h1>
+				
+				<div id = "div1">
 					
-				}
-				
-			}
-			setInterval(responsiveNavigation, 1/*ms*/);
-			
-		</script>
-		
-		<div id = "webMain">
-			
-			<font id = "sectionName"><b><u>Introductory Analysis Methods</u></b></font>
-			
-			<h1>Support and Resistance Levels</h1>
-			
-			<div id = "div0">
-				
-				<p>When looking at a chart, confusion can often occur, as many lines, numbers and colors approach you. That's why this course is going to be in the words of a beginner and not of a Wall Street broker. It’s pretty simple, buy low and sell high&mdash;the same as selling cars or shoes, for example. The material discussed will help you trade with the least amount of time involved, helping you as a part time trader. So, let’s start off with support and resistance levels.</p>
-				
-				<p>First and foremost, determining where the support and resistance levels are is high priority. <b>Support levels</b> are levels of which the stock hit then rejected up. This level should be a good indication of where a good buy is and not a good sell. A conservative trader will create their support level where the stock hit many times to lower their risk. A more risky trader will set this level further down where the stock hit a few times, producing more risk but more return. So, understanding support levels, and understanding levels of resistance, are the completely opposite. <b>Resistance levels</b> are levels in which the stock hit then rejected back down. These levels will give a good sell point and not a good buy. Risky traders will also set this level high, leaving more margin but greater risk. Remember, these levels will never be exact down to the penny, so if the stock moves a little past these levels, don’t panic; just keep a close eye!</p>
-				
-				<p>The top red line is the resistance level and the bottom red line is the support level.</p>
-				
-				<center><img id = "image0" src = "../IMG/C1S1/image0.png" alt = "0b01101001"></center>
-				
-			</div>
-			
-			<h1>Uptrend, Downtrend, and Consolidation</h1>
-			
-			<div id = "div1">
-				
-				<p>Why invest in a company that has a track record of a downward pattern? Why not invest in a company that is showing an upward trend? See, a reason for 90% of traders losing money is because they invest in companies that have an overall downward trend. So here's how to identify an uptrend.</p>
-				
-				<p>An <b>uptrend</b> is a pattern seen to visually go up. It's that simple. If a company is making overall higher low points and/or higher high points, it's showing signs of an uptrend. This must be seen in a year and/or 180 day chart to give a possibility to take a swing trade position. A <b>swing trade</b> is the action of selling your position on a different day in a short period of time, usually in intervals of days or weeks. Only investing in stocks showing signs of an uptrend will significantly decrease risk, especially over time.</p>
-				
-				<center><img id = "image1" src = "../IMG/C1S1/image1.png" alt = "0b01101001"></center>
-				
-				<p>A <b>downtrend</b>, on the other hand, is the inverse of an uptrend. This pattern makes overall lower high points and/or lower low point, seen in a year and/or 180 day chart. This continuous pattern of lower low points and lower high points gives a red flag before taking a swing trade position. In the chart, this pattern is a downtrend because its high points are higher than the previous and its low points are higher than its previous.</p>
-				
-				<center><img id = "image2" src = "../IMG/C1S1/image2.png" alt = "0b01101001"></center>
-				
-				<p>The <b>consolidation</b> is a phase of no signs of an uptrend or downtrend, just almost stagnate. This pattern should have a horizontal support and resistance as the stock isn’t an uptrend or downtrend. Investing in a stock that is in this phase is very simple to understand and also eliminates risk when support and resistance levels are identified. In the chart, this stock hits right around the support (the bottom red line) then comes up to the resistance (the top red line) and repeats that without an uptrend or downtrend pattern past the levels of resistance and support.</p>
-				
-				<center><img id = "image3" src = "../IMG/C1S1/image3.png" alt = "0b01101001"></center>
-				
-				<p>Now it's your turn. Identify if the following charts are showing signs of an uptrend, downtrend or consolidation.</p>
-				
-				<center><img id = "image4" src = "../IMG/C1S1/image4.png" alt = "0b01101001"></center>
-				
-				<script>
+					<p>Why invest in a company that has a track record of a downward pattern? Why not invest in a company that is showing an upward trend? See, a reason for 90% of traders losing money is because they invest in companies that have an overall downward trend. So here's how to identify an uptrend.</p>
 					
-					var intArray0 = new Array(117, 112, 116, 114, 101, 110, 100);
-					var str0 = "";
+					<p>An <b>uptrend</b> is a pattern seen to visually go up. It's that simple. If a company is making overall higher low points and/or higher high points, it's showing signs of an uptrend. This must be seen in a year and/or 180 day chart to give a possibility to take a swing trade position. A <b>swing trade</b> is the action of selling your position on a different day in a short period of time, usually in intervals of days or weeks. Only investing in stocks showing signs of an uptrend will significantly decrease risk, especially over time.</p>
 					
-					for(q = 0; q < intArray0.length; q++) {
+					<center><img id = "image1" src = "../IMG/C1S1/image1.png" alt = "uptrend"></center>
+					
+					<p>A <b>downtrend</b>, on the other hand, is the inverse of an uptrend. This pattern makes overall lower high points and/or lower low point, seen in a year and/or 180 day chart. This continuous pattern of lower low points and lower high points gives a red flag before taking a swing trade position. In the chart, this pattern is a downtrend because its high points are higher than the previous and its low points are higher than its previous.</p>
+					
+					<center><img id = "image2" src = "../IMG/C1S1/image2.png" alt = "downtrend"></center>
+					
+					<p>The <b>consolidation</b> is a phase of no signs of an uptrend or downtrend, just almost stagnate. This pattern should have a horizontal support and resistance as the stock isn’t an uptrend or downtrend. Investing in a stock that is in this phase is very simple to understand and also eliminates risk when support and resistance levels are identified. In the chart, this stock hits right around the support (the bottom red line) then comes up to the resistance (the top red line) and repeats that without an uptrend or downtrend pattern past the levels of resistance and support.</p>
+					
+					<center><img id = "image3" src = "../IMG/C1S1/image3.png" alt = "suppor and resistance lines"></center>
+					
+					<p>Now it's your turn. Identify if the following charts are showing signs of an uptrend, downtrend or consolidation.</p>
+					
+					<script>
 						
-						str0 += String.fromCharCode(intArray0[q]);
+						var intArray0 = new Array(117, 112, 116, 114, 101, 110, 100);
+						var str0 = "";
 						
-					}
-					
-					var intArray1 = new Array(100, 111, 119, 110, 116, 114, 101, 110, 100);
-					var str1 = "";
-					
-					for(q = 0; q < intArray1.length; q++) {
-						
-						str1 += String.fromCharCode(intArray1[q]);
-						
-					}
-					
-					var intArray2 = new Array(99, 111, 110, 115, 111, 108, 105, 100, 97, 116, 105, 111, 110);
-					var str2 = "";
-					
-					for(q = 0; q < intArray2.length; q++) {
-						
-						str2 += String.fromCharCode(intArray2[q]);
-						
-					}
-					
-					var intArray3 = new Array(112, 117, 109, 112, 32, 97, 110, 100, 32, 100, 117, 109, 112);
-					var str3 = "";
-					
-					for(q = 0; q < intArray3.length; q++) {
-						
-						str3 += String.fromCharCode(intArray3[q]);
-						
-					}
-				
-					function w(n, str) {
-						
-						if(getInputValue("input" + n).toLowerCase().trim() === str) {
+						for(q = 0; q < intArray0.length; q++) {
 							
-							alert("Correct!");
-							
-						} else if(compareStringInput("input" + n, "")) {
-							
-							alert("Please enter an answer.");
-							
-						} else {
-							
-							alert("Incorrect, please try again.");
+							str0 += String.fromCharCode(intArray0[q]);
 							
 						}
 						
-					}
-					
-				</script>
-				
-				1. <input id = "input0" type = "text"><button id = "button0" type = "button" onclick = "w(0, str0)">Check</button><br/><br/>
-				
-				<center><img id = "image5" src = "../IMG/C1S1/image5.png" alt = "0b01101001"></center>
-				
-				2. <input id = "input1" type = "text"><button id = "button1" type = "button" onclick = "w(1, str1)">Check</button><br/><br/>
-				
-				<center><img id = "image6" src = "../IMG/C1S1/image6.png" alt = "0b01101001"></center>
-				
-				3. <input id = "input2" type = "text"><button id = "button2" type = "button" onclick = "w(2, str2)">Check</button><br/><br/>
-				
-				<center><img id = "image7" src = "../IMG/C1S1/image7.png" alt = "0b01101001"></center>
-				
-				4. <input id = "input3" type = "text"><button id = "button3" type = "button" onclick = "w(3, str3)">Check</button><br/><br/>
-				
-				<script>
-					
-					for(q = 0; q < 4; q++) {
+						var intArray1 = new Array(100, 111, 119, 110, 116, 114, 101, 110, 100);
+						var str1 = "";
 						
-						clickOnEnter("input" + q, "button" + q);
-						setCursor("button" + q, "pointer");
+						for(q = 0; q < intArray1.length; q++) {
+							
+							str1 += String.fromCharCode(intArray1[q]);
+							
+						}
 						
-					}
-					
-				</script>
-				
-				<p>How did you do? Yeah, I know the 4<sup>th</sup> chart was confusing. Well chart 4 represents a volatility stock, commonly known as a penny stock. See, when a stock jumps from $2 a share to $20 a share in 1 day shows a huge red flag. No pattern to base off of, just pure signs of a pump and dump. A <b>pump and dump</b> is when a stock makes significant jumps over a very short period of time and retracts quickly. This can be a result of news, earning reports or manipulation by a company. These pump and dumps carry extreme risk, but they produce the most amount of return in a given amount of time. These are what people trade when they are trying to make a quick buck. That’s not what we are here for. We are trying to understand a strategy with the least possible amount of risk with the greatest possible amount of return. These pump and dumps can be played and commonly do but involve extreme techniques, time, discipline and emotional detachment. So, let's stick with our strategy and not worry about anyone else.</p>
-				
-			</div>
-			
-			<h1>Indicators</h1>
-			
-			<div id = "div2">
-				
-				<p>To predict where stock will go in the near future, one line isn't going to do much, so that's where indicators come in. These are used to predict good entry and exit points before taking a position. Now instead of sorting through all of the indicators, I'm going to break down a few of my favorites that I currently use.</p>
-				
-				<p><u>Volume:</u><br/>Understanding volume and how it affects a stock is vital to a good trade. Volume is the amount of shares traded at a given time. Every stock will have an average volume. Now, if a stock has low volume, the chances of it becoming more volatile is less. This is because a stock moves based on buyers and sellers. So, if there aren't a large number of buyers and sellers, the stock wont move a significant amount unless some catalyst comes out. On the other hand, if a stock has high volume, the volatility will be high as well. Meaning that the stock will moves much faster. To identify volume, one can add the volume to their charts and compare that to the average volume or one can see the candles are weak and not full. Here is a comparison of high volume and low volume.</p>
-				
-				<p><u>High Volume:</u></p>
-				
-				<center><img id = "image8" src = "../IMG/C1S1/image8.png" alt = "0b01101001"></center>
-				
-				<p><u>Low Volume:</u></p>
-				
-				<center><img id = "image9" src = "../IMG/C1S1/image9.png" alt = "0b01101001"></center>
-				
-				<p><u>Relative Strength Index (RSI):</u><br/>The relative strength index, or the RSI indicator, is commonly used to indicate if a stock is <font color = "#00FFFF">oversold</font> or <font color = "#FF0000">overbought</font>. When a stock is <font color = "#00FFFF">oversold</font>, it has hit a low point in the pattern and is commonly seen as a buy area. This will appear on the RSI as a blue color or close to 30 on the RSI (the bottom yellow line). When a stock is <font color = "#FF0000">overbought</font>, it has hit a common high point in the pattern, indicating a potential sell. This will appear red or close to 70 on the RSI (the top yellow line).</p>
-				
-				<center><img id = "image10" src = "../IMG/C1S1/image10.png" alt = "0b01101001"></center>
-				
-				<p><u>Exponential Moving Average (EMA):</u><br/>The exponential moving average or the EMA is used to identify the direction of the stock. This moving average reacts much faster, giving a short term prediction over other moving averages that we’ll discuss later. The EMA is a line hugging the candles of the stock. If the EMA is pointing down the current trend is a downtrend. If the EMA is pointing up, the current trend is an uptrend and remember we only want to invest when a stock's pattern is an up not down. Most importantly, when the candles of a stock are above the EMA, this indicates an uptrend. If the candles of the stock are below the EMA, a downtrend is occurring. An easy way to identify this is to imagine an arrow at the end of the EMA, and to imagine the direction in which it is pointing.</p>
-				
-				<center><img id = "image11" src = "../IMG/C1S1/image11.png" alt = "0b01101001"></center>
-				
-				<p><u>Simple Moving Average (SMA):</u><br/>The simple moving average or the SMA is used to identify the direction of a stock in a larger window. As we learned earlier, the EMA is used to predict short-term trends, while the SMA is used to predict long-term trends. Due to the SMA's rate of reaction to a stock's price, larger time frames are more beneficial over shorter time frames. Since this course is designed to help people with not a large amount of extra time like full time workers or students, the SMA is your best friend. As shown in the chart below, when the candles are below the SMA, it's on a downtrend. And, when the candles are above the SMA, it's on a uptrend overall. Since we will be swing trading, this moving average can provide more value than other moving averages.</p>
-				
-				<center><img id = "image12" src = "../IMG/C1S1/image12.png" alt = "0b01101001"></center>
-				
-				<p><u>Moving Average Convergence/Divergence (MACD):</u><br/>The Moving Average Convergence/Divergence, or the MACD, is also a moving average. This indicator gives many signals to when to sell or buy. For example, when the blue line of the MACD crosses over the yellow line, this shows a bullish signal giving off a buy. Another buy signal is when the red bars start to get smaller and the green bars start to become larger. Also with the MACD, when the blue line is above the yellow, and pointing up, an indication of an uptrend is presented. A sell signal is when the blue line crosses below the yellow line, and lower green bars form while higher red bars form. In addition, if the blue line is pointing down, a downtrend is indicated.</p>
-				
-				<center><img id = "image13" src = "../IMG/C1S1/image13.png" alt = "0b01101001"></center>
-				
-				<p><u>Volume Weighted Average Price (VWAP):</u><br/>The Volume weighted average price, or the VWAP indicator, gives indications based on volume. This indicator will move as the stock moves, while continuously taking the average. Therefore, it is mainly used in day trading. Personally, I have 3 lines for my VWAP, the top (pink), the middle (purple) and the bottom (yellow). The top lines gives off a sell signal being the stock is very overbought, and the bottom line gives off a buy signal as it's indicating an oversold. The middle line is a median, as it acts as a wall. For example, if a stock is between the middle and bottom VWAP, it's on a downtrend. And, if a stock is between the middle and top VWAP, it's on an uptrend. Despite the VWAP being primarly used for day trading, it can indicate a flag or a downward pattern that other indicators can’t initially provide. Also, the more indicators given and understood, the higher the probability of making a profitable trade.</p>
-				
-				<center><img id = "image14" src = "../IMG/C1S1/image14.png" alt = "0b01101001"></center>
-				
-				<center><img id = "image15" src = "../IMG/C1S1/image15.png" alt = "0b01101001"></center>
-				
-				<p>These are all the indicators to know. By no means these will be 100% accurate; it's the traders job to analyse and determine whether to take a position or not. These indicators work in harmony, so if one indicator is showing a signal, the others will also (in most circumstances).</p>
-				
-			</div>
-			
-			<h1>Rejection/Confirmation</h1>
-			
-			<div id = "div3">
-				
-				<p>So by now, you should understand when there is a good buy and when there is a good sell. However, how do you know if it's a good deal? In the end, the idea is to wait for a good deal and take advantage. Many traders will buy because the stock is in a good buy range but don't wait for the confirmation and will be stuck in a loss. A <b>confirmation</b> has a definite path, so waiting for this will significantly decrease risk. When looking at a 180 day chart, if the EMA is pointing down, and the candles are below the EMA, is it a good buy even if the RSI is overbought? No, because there is no confirmation. For example, an uptrend will occur after a downtrend phase (EMA pointing down), after a consolidation phase (EMA flat), and then, finally, after a break over the EMA. Patience is crucial when waiting for either a confirmation or a rejection. Also, not trying to gain the whole support and resistance margin, and just getting a piece of it, will help decrease risk.</p>
-				
-				<p>A <b>rejection</b> is the exact opposite of a confirmation. A rejection occurs when the candles of a stock approach a certain area and goes down. This area, for example, can be a moving average, a price, a support/resistance. Staying alert when a stock is approaching these areas is critical to make sure it doesn't get rejected and go down.</p>
-				
-				<p>Here is an example of a past trade I took. I seen $LABU approach a support at $86 and waited for a confirmation above $94 for an uptrend. However, the SMA on a 10 day chart was so close to the candles, which I was previously unaware of, that it ultimately resulted in a rejection. I ended up cutting my losses at a 3%.</p>
-				
-				<center><img id = "image16" src = "../IMG/C1S1/image16.png" alt = "0b01101001"></center>
-				
-				<p>The reason I showed one of my bad trades was because nothing will occur 100% to your plan. That's why waiting for a confirmation is very important. A better buy in the chart would be a break above that SMA (the green line) with the EMA pointing up.</p>
-				
-				<p>Here are some examples of rejection.</p>
-				
-				<center><img id = "image17" src = "../IMG/C1S1/image17.png" alt = "0b01101001"></center>
-				
-				<center><img id = "image18" src = "../IMG/C1S1/image18.png" alt = "0b01101001"></center>
-				
-				<p>And, here are some examples of confirmation.</p>
-				
-				<center><img id = "image19" src = "../IMG/C1S1/image19.png" alt = "0b01101001"></center>
-				
-				<center><img id = "image20" src = "../IMG/C1S1/image20.png" alt = "0b01101001"></center>
-				
-			</div>
-			
-			<h1>Understanding Candles</h1>
-			
-			<div id = "div4">
-				
-				<p>When talking about the stock itself, we are really discussing the <b>candles</b>. The candlesticks are formed with the bodies representing opening and closing prices, and the wickes representing high and low points. Green candles occur when the stock is up and red candles occur when a stock is down. A green candle opens from low to high and a red candle opens from high to low. So, a lot of confusion happens when red candles are above the green, but that because they open higher and close lower. Candles are useful in many time frames to give an understanding for all trades. Looking at a 180 day chart, the candles shown are 4 hour to give a more overall direction, whereas candles on a 1 day chart are 1 minute candles, which give a better understanding intraday. Many scenarios can occur with candles; that’s why it is important to understand them. For example, a wedge is a pattern containing a horizontal resistance/support and is paired with an ascending or descending support/resistance. This will be seen as the candles get smaller and smaller. The result in these wedge patterns is a break either to the upside or the downside. These are more common in a smaller time frame, but still come up in large time frames, so it's important to be aware of these wedges. When choosing a time frame, you will see 180d 4h, 1d 1m, 5d 5m etc. This just means the day amount (d), and what each candle represents (hours (h), minutes (m)). Clearly, candles can be tricky to comprehend initially, but once understood, they can be very effective.</p>
-				
-			</div>
-			
-			<h1>Glossary</h1>
-			
-			<div id = "div5">
-				
-				<p><u>Candles:</u> the specific time bars related to stock prices, showing high and low points on a chart.</p>
-				<p><u>Confirmation:</u> a phrase known to imply a stock has confirmed a relative pattern.</p>
-				<p><u>Consolidation:</u> a period of horizontal behavior in which a stock makes no new high or low points in a specific time interval.</p>
-				<p><u>Downtrend:</u> the continuous pattern of a downward pattern making overall lower low points and lower high points.</p>
-				<p><u>Overbought:</u> when buyers have pushed the price of a stock to an over-extended state, such that a pullback is expected.</p>
-				<p><u>Oversold:</u> when sellers have pushed the price of a stock too low, such that a reversal or upward movement is expected.</p>
-				<p><u>Pump and dump:</u> the pattern of a stock seen to get manipulated by some catalyst, and show extremely short areas of high volume and stock spikes. Following this, an immediate dump occurs, retracting the stock back to its initial price.</p>
-				<p><u>Rejection:</u> a phrase known to imply a stock has hit an area of resistance and continues downward.</p>
-				<p><u>Resistance:</u> a level of which a stock is peaked up at and continues downward.</p>
-				<p><u>Support:</u> a level of which the stock is held up at and continues upward.</p>
-				<p><u>Swing trade:</u> the act of holding a stock for more than a day, typically in intervals of days or weeks.</p>
-				<p><u>Uptrend:</u> the continuous pattern of a upward pattern making overall higher low points and higher high points.</p>
-				
-			</div>
-			
-		</div>
-		
-		<script>
-			
-			// webMain scripts.
-			setPaddingTRBL("webMain", "35px", "7%", "25px", "7%");
-			setFont("webMain", "arial");
-			setLineHeight("webMain", "200%");
-			// sectionName scripts.
-			setSize("sectionName", "45px");
-			setColor("sectionName", "rgb(3, 90, 255)");
-			// div + q scripts.
-			for(q = 0; q < 6; q++) {
-				
-				setSize("div" + q, "20px");
-				setFont("div" + q, "verdana");
-				
-			}
-			// Scripts for images.
-			for(q = 0; q < 21; q++) {
-				
-				setWidth("image" + q, "75%");
-				
-			}
-			// Scripts for responsive design.
-			var executedResponsiveImage = false;
-			function responsiveImage() {
-				
-				if(window.innerWidth < 800) {
-					
-					for(q = 0; q < 21; q++) {
+						var intArray2 = new Array(99, 111, 110, 115, 111, 108, 105, 100, 97, 116, 105, 111, 110);
+						var str2 = "";
 						
-						setWidth("image" + q, "100%");
+						for(q = 0; q < intArray2.length; q++) {
+							
+							str2 += String.fromCharCode(intArray2[q]);
+							
+						}
 						
-					}
+						var intArray3 = new Array(112, 117, 109, 112, 32, 97, 110, 100, 32, 100, 117, 109, 112);
+						var str3 = "";
+						
+						for(q = 0; q < intArray3.length; q++) {
+							
+							str3 += String.fromCharCode(intArray3[q]);
+							
+						}
 					
-					executedResponsiveImage = true;
+						function w(n, str) {
+							
+							if(getInputValue("input" + n).toLowerCase().trim() === str) {
+								
+								alert("Correct!");
+								
+							} else if(compareStringInput("input" + n, "")) {
+								
+								alert("Please enter an answer.");
+								
+							} else {
+								
+								alert("Incorrect, please try again.");
+								
+							}
+							
+						}
+						
+					</script>
+					
+					<center><img id = "image4" src = "../IMG/C1S1/image4.png" alt = "chart"></center>
+					
+					1. <input id = "input0" type = "text"><button id = "button0" type = "button" onclick = "w(0, str0)">Check</button><br/><br/>
+					
+					<center><img id = "image5" src = "../IMG/C1S1/image5.png" alt = "chart"></center>
+					
+					2. <input id = "input1" type = "text"><button id = "button1" type = "button" onclick = "w(1, str1)">Check</button><br/><br/>
+					
+					<center><img id = "image6" src = "../IMG/C1S1/image6.png" alt = "chart"></center>
+					
+					3. <input id = "input2" type = "text"><button id = "button2" type = "button" onclick = "w(2, str2)">Check</button><br/><br/>
+					
+					<center><img id = "image7" src = "../IMG/C1S1/image7.png" alt = "chart"></center>
+					
+					4. <input id = "input3" type = "text"><button id = "button3" type = "button" onclick = "w(3, str3)">Check</button><br/><br/>
+					
+					<script>
+						
+						for(q = 0; q < 4; q++) {
+							
+							clickOnEnter("input" + q, "button" + q);
+							document.getElementById("button" + q).style.cursor = "pointer";
+							
+						}
+						
+					</script>
+					
+					<p>How did you do? Yeah, I know the 4<sup>th</sup> chart was confusing. Well chart 4 represents a volatility stock, commonly known as a penny stock. See, when a stock jumps from $2 a share to $20 a share in 1 day shows a huge red flag. No pattern to base off of, just pure signs of a pump and dump. A <b>pump and dump</b> is when a stock makes significant jumps over a very short period of time and retracts quickly. This can be a result of news, earning reports or manipulation by a company. These pump and dumps carry extreme risk, but they produce the most amount of return in a given amount of time. These are what people trade when they are trying to make a quick buck. That’s not what we are here for. We are trying to understand a strategy with the least possible amount of risk with the greatest possible amount of return. These pump and dumps can be played and commonly do but involve extreme techniques, time, discipline and emotional detachment. So, let's stick with our strategy and not worry about anyone else.</p>
+					
+				</div>
+				
+				<h1>Indicators</h1>
+				
+				<div id = "div2">
+					
+					<p>To predict where stock will go in the near future, one line isn't going to do much, so that's where indicators come in. These are used to predict good entry and exit points before taking a position. Now instead of sorting through all of the indicators, I'm going to break down a few of my favorites that I currently use.</p>
+					
+					<p><u>Volume:</u><br/>Understanding volume and how it affects a stock is vital to a good trade. Volume is the amount of shares traded at a given time. Every stock will have an average volume. Now, if a stock has low volume, the chances of it becoming more volatile is less. This is because a stock moves based on buyers and sellers. So, if there aren't a large number of buyers and sellers, the stock wont move a significant amount unless some catalyst comes out. On the other hand, if a stock has high volume, the volatility will be high as well. Meaning that the stock will moves much faster. To identify volume, one can add the volume to their charts and compare that to the average volume or one can see the candles are weak and not full. Here is a comparison of high volume and low volume.</p>
+					
+					<p><u>High Volume:</u></p>
+					
+					<center><img id = "image8" src = "../IMG/C1S1/image8.png" alt = "high volume stock"></center>
+					
+					<p><u>Low Volume:</u></p>
+					
+					<center><img id = "image9" src = "../IMG/C1S1/image9.png" alt = "low volume stock"></center>
+					
+					<p><u>Relative Strength Index (RSI):</u><br/>The relative strength index, or the RSI indicator, is commonly used to indicate if a stock is <font color = "#00FFFF">oversold</font> or <font color = "#FF0000">overbought</font>. When a stock is <font color = "#00FFFF">oversold</font>, it has hit a low point in the pattern and is commonly seen as a buy area. This will appear on the RSI as a blue color or close to 30 on the RSI (the bottom yellow line). When a stock is <font color = "#FF0000">overbought</font>, it has hit a common high point in the pattern, indicating a potential sell. This will appear red or close to 70 on the RSI (the top yellow line).</p>
+					
+					<center><img id = "image10" src = "../IMG/C1S1/image10.png" alt = "relative strength index"></center>
+					
+					<p><u>Exponential Moving Average (EMA):</u><br/>The exponential moving average or the EMA is used to identify the direction of the stock. This moving average reacts much faster, giving a short term prediction over other moving averages that we’ll discuss later. The EMA is a line hugging the candles of the stock. If the EMA is pointing down the current trend is a downtrend. If the EMA is pointing up, the current trend is an uptrend and remember we only want to invest when a stock's pattern is an up not down. Most importantly, when the candles of a stock are above the EMA, this indicates an uptrend. If the candles of the stock are below the EMA, a downtrend is occurring. An easy way to identify this is to imagine an arrow at the end of the EMA, and to imagine the direction in which it is pointing.</p>
+					
+					<center><img id = "image11" src = "../IMG/C1S1/image11.png" alt = "exponential moving average"></center>
+					
+					<p><u>Simple Moving Average (SMA):</u><br/>The simple moving average or the SMA is used to identify the direction of a stock in a larger window. As we learned earlier, the EMA is used to predict short-term trends, while the SMA is used to predict long-term trends. Due to the SMA's rate of reaction to a stock's price, larger time frames are more beneficial over shorter time frames. Since this course is designed to help people with not a large amount of extra time like full time workers or students, the SMA is your best friend. As shown in the chart below, when the candles are below the SMA, it's on a downtrend. And, when the candles are above the SMA, it's on a uptrend overall. Since we will be swing trading, this moving average can provide more value than other moving averages.</p>
+					
+					<center><img id = "image12" src = "../IMG/C1S1/image12.png" alt = "simple moving average"></center>
+					
+					<p><u>Moving Average Convergence/Divergence (MACD):</u><br/>The Moving Average Convergence/Divergence, or the MACD, is also a moving average. This indicator gives many signals to when to sell or buy. For example, when the blue line of the MACD crosses over the yellow line, this shows a bullish signal giving off a buy. Another buy signal is when the red bars start to get smaller and the green bars start to become larger. Also with the MACD, when the blue line is above the yellow, and pointing up, an indication of an uptrend is presented. A sell signal is when the blue line crosses below the yellow line, and lower green bars form while higher red bars form. In addition, if the blue line is pointing down, a downtrend is indicated.</p>
+					
+					<center><img id = "image13" src = "../IMG/C1S1/image13.png" alt = "moving average convergence divergence"></center>
+					
+					<p><u>Volume Weighted Average Price (VWAP):</u><br/>The Volume weighted average price, or the VWAP indicator, gives indications based on volume. This indicator will move as the stock moves, while continuously taking the average. Therefore, it is mainly used in day trading. Personally, I have 3 lines for my VWAP, the top (pink), the middle (purple) and the bottom (yellow). The top lines gives off a sell signal being the stock is very overbought, and the bottom line gives off a buy signal as it's indicating an oversold. The middle line is a median, as it acts as a wall. For example, if a stock is between the middle and bottom VWAP, it's on a downtrend. And, if a stock is between the middle and top VWAP, it's on an uptrend. Despite the VWAP being primarly used for day trading, it can indicate a flag or a downward pattern that other indicators can’t initially provide. Also, the more indicators given and understood, the higher the probability of making a profitable trade.</p>
+					
+					<center><img id = "image14" src = "../IMG/C1S1/image14.png" alt = "volume weighted average price"></center>
+					
+					<center><img id = "image15" src = "../IMG/C1S1/image15.png" alt = "volume weighted average price"></center>
+					
+					<p>These are all the indicators to know. By no means these will be 100% accurate; it's the traders job to analyse and determine whether to take a position or not. These indicators work in harmony, so if one indicator is showing a signal, the others will also (in most circumstances).</p>
+					
+				</div>
+				
+				<h1>Rejection/Confirmation</h1>
+				
+				<div id = "div3">
+					
+					<p>So by now, you should understand when there is a good buy and when there is a good sell. However, how do you know if it's a good deal? In the end, the idea is to wait for a good deal and take advantage. Many traders will buy because the stock is in a good buy range but don't wait for the confirmation and will be stuck in a loss. A <b>confirmation</b> has a definite path, so waiting for this will significantly decrease risk. When looking at a 180 day chart, if the EMA is pointing down, and the candles are below the EMA, is it a good buy even if the RSI is overbought? No, because there is no confirmation. For example, an uptrend will occur after a downtrend phase (EMA pointing down), after a consolidation phase (EMA flat), and then, finally, after a break over the EMA. Patience is crucial when waiting for either a confirmation or a rejection. Also, not trying to gain the whole support and resistance margin, and just getting a piece of it, will help decrease risk.</p>
+					
+					<p>A <b>rejection</b> is the exact opposite of a confirmation. A rejection occurs when the candles of a stock approach a certain area and goes down. This area, for example, can be a moving average, a price, a support/resistance. Staying alert when a stock is approaching these areas is critical to make sure it doesn't get rejected and go down.</p>
+					
+					<p>Here is an example of a past trade I took. I seen $LABU approach a support at $86 and waited for a confirmation above $94 for an uptrend. However, the SMA on a 10 day chart was so close to the candles, which I was previously unaware of, that it ultimately resulted in a rejection. I ended up cutting my losses at a 3%.</p>
+					
+					<center><img id = "image16" src = "../IMG/C1S1/image16.png" alt = "chart"></center>
+					
+					<p>The reason I showed one of my bad trades was because nothing will occur 100% to your plan. That's why waiting for a confirmation is very important. A better buy in the chart would be a break above that SMA (the green line) with the EMA pointing up.</p>
+					
+					<p>Here are some examples of rejection.</p>
+					
+					<center><img id = "image17" src = "../IMG/C1S1/image17.png" alt = "rejection"></center>
+					
+					<center><img id = "image18" src = "../IMG/C1S1/image18.png" alt = "rejection"></center>
+					
+					<p>And, here are some examples of confirmation.</p>
+					
+					<center><img id = "image19" src = "../IMG/C1S1/image19.png" alt = "confirmation"></center>
+					
+					<center><img id = "image20" src = "../IMG/C1S1/image20.png" alt = "confirmation"></center>
+					
+				</div>
+				
+				<h1>Understanding Candles</h1>
+				
+				<div id = "div4">
+					
+					<p>When talking about the stock itself, we are really discussing the <b>candles</b>. The candlesticks are formed with the bodies representing opening and closing prices, and the wickes representing high and low points. Green candles occur when the stock is up and red candles occur when a stock is down. A green candle opens from low to high and a red candle opens from high to low. So, a lot of confusion happens when red candles are above the green, but that because they open higher and close lower. Candles are useful in many time frames to give an understanding for all trades. Looking at a 180 day chart, the candles shown are 4 hour to give a more overall direction, whereas candles on a 1 day chart are 1 minute candles, which give a better understanding intraday. Many scenarios can occur with candles; that’s why it is important to understand them. For example, a wedge is a pattern containing a horizontal resistance/support and is paired with an ascending or descending support/resistance. This will be seen as the candles get smaller and smaller. The result in these wedge patterns is a break either to the upside or the downside. These are more common in a smaller time frame, but still come up in large time frames, so it's important to be aware of these wedges. When choosing a time frame, you will see 180d 4h, 1d 1m, 5d 5m etc. This just means the day amount (d), and what each candle represents (hours (h), minutes (m)). Clearly, candles can be tricky to comprehend initially, but once understood, they can be very effective.</p>
+					
+				</div>
+				
+				<h1>Glossary</h1>
+				
+				<div id = "div5">
+					
+					<p><u>Candles:</u> the specific time bars related to stock prices, showing high and low points on a chart.</p>
+					<p><u>Confirmation:</u> a phrase known to imply a stock has confirmed a relative pattern.</p>
+					<p><u>Consolidation:</u> a period of horizontal behavior in which a stock makes no new high or low points in a specific time interval.</p>
+					<p><u>Downtrend:</u> the continuous pattern of a downward pattern making overall lower low points and lower high points.</p>
+					<p><u>Overbought:</u> when buyers have pushed the price of a stock to an over-extended state, such that a pullback is expected.</p>
+					<p><u>Oversold:</u> when sellers have pushed the price of a stock too low, such that a reversal or upward movement is expected.</p>
+					<p><u>Pump and dump:</u> the pattern of a stock seen to get manipulated by some catalyst, and show extremely short areas of high volume and stock spikes. Following this, an immediate dump occurs, retracting the stock back to its initial price.</p>
+					<p><u>Rejection:</u> a phrase known to imply a stock has hit an area of resistance and continues downward.</p>
+					<p><u>Resistance:</u> a level of which a stock is peaked up at and continues downward.</p>
+					<p><u>Support:</u> a level of which the stock is held up at and continues upward.</p>
+					<p><u>Swing trade:</u> the act of holding a stock for more than a day, typically in intervals of days or weeks.</p>
+					<p><u>Uptrend:</u> the continuous pattern of a upward pattern making overall higher low points and higher high points.</p>
+					
+				</div>
+				
+			</div>
+			
+			<script>
+				
+				for(q = 0; q < 6; q++) {
+					
+					document.getElementById("div" + q).style.fontSize = "20px";
+					document.getElementById("div" + q).style.fontFamily = "verdana";
 					
 				}
-				
-				if(executedResponsiveImage && window.innerWidth >= 800) {
+				for(q = 0; q < 21; q++) {
 					
-					for(q = 0; q < 21; q++) {
+					document.getElementById("image" + q).style.width = "75%";
+					
+				}
+				var executedResponsiveImage = false;
+				function responsiveImage() {
+					
+					if(window.innerWidth < 800) {
 						
-						setWidth("image" + q, "75%");
+						for(q = 0; q < 21; q++) {
+							
+							document.getElementById("image" + q).style.width = "100%";
+							
+						}
+						executedResponsiveImage = true;
+						
+					}
+					if(executedResponsiveImage && window.innerWidth >= 800) {
+						
+						for(q = 0; q < 21; q++) {
+							
+							document.getElementById("image" + q).style.width = "75%";
+							
+						}
+						executedResponsiveImage = false;
 						
 					}
 					
-					executedResponsiveImage = false;
-					
 				}
+				setInterval(responsiveImage, 1/*ms*/);
 				
-			}
-			setInterval(responsiveImage, 1/*ms*/);
+			</script>
 			
-		</script>
-		
-		<div id = "webFooter0">
-			
-			<div id = "webFooter0Component0" class = "unhiddenInlineBlock"  style = "vertical-align: top;">
-				
-				<p><b>Instagram</b></p>
-				
-				<p style = "font-size: 21px;">Want to be notified on future projects or see my weekly trading recaps?</p>
-				
-				<center><div id = "instagramButton" class = "noHighlight" onmouseleave = "if(this.style.boxShadow.indexOf('-') === -1) {setXY(this.id, 2, -2); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');}" onmousedown = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" onmouseup = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" ontouchstart = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" ontouchend = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" onclick = "window.open('https://www.instagram.com/_themarketmaker/');"><b>INSTAGRAM</b></div></center>
-				
-			</div>
-			
-			<div id = "webFooter0Component1" class = "unhiddenInlineBlock"  style = "vertical-align: top;">
-				
-				<p><b>YouTube</b></p>
-				
-				<p style = "font-size: 21px;">Want to trade live with me or see my weekly videos?</p>
-				
-				<center><div id = "youtubeButton" class = "noHighlight" onmouseleave = "if(this.style.boxShadow.indexOf('-') === -1) {setXY(this.id, 2, -2); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');}" onmousedown = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" onmouseup = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" ontouchstart = "setXY(this.id, -2, 2); setBoxShadow(this.id, '0px', '0px', '0px', '0px', '#0D57A5');" ontouchend = "setXY(this.id, 2, -2); setMarginTRBL(this.id, '0px', '0px', '0px', '0px'); setBoxShadow(this.id, '-2px', '2px', '0px', '1px', '#0D57A5');" onclick = "window.open('https://www.youtube.com/channel/UCAvsG2ESUjmxlASTdfvp-4A');"><b>YOUTUBE</b></div></center>
-				
-			</div>
+			<script src = "../JS/footer.js"></script>
 			
 		</div>
-		
-		<div id = "webFooter1">
-			
-			<center>
-				
-				<p><b>Feeling Generous?</b></p>
-				
-				<p style = "font-size: 25px; margin-left: 5%; margin-right: 5%;">Consider showing your appreciation by donating to help fund our future complimentary trading courses. Any amount will be immensely appreciated.</p>
-				
-				<form action = "https://www.paypal.com/cgi-bin/webscr" method = "post" target = "_top">
-					
-					<input type = "hidden" name = "cmd" value = "_s-xclick">
-					<input type = "hidden" name = "hosted_button_id" value = "U9F9X33K9F5VN">
-					<input type = "image" src = "https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border = "0" name = "submit" alt = "PayPal - The safer, easier way to pay online!">
-					<img alt = "" border = "0" src = "https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width = "1" height = "1">
-					
-				</form>
-				
-			</center>
-			
-		</div>
-		
-		<div id = "webFooter2">
-			
-			<center style = "margin-left: 1%; margin-right: 1%;"><a class = "removeDefaultHyperlinkStyle" href = "what's_new.html"><b><i>SPYweb v:2.0.0</i></b></a></center>
-			
-		</div>
-		
-		<script>
-			
-			// webFooter0 scripts.
-			setSize("webFooter0", "0px");
-			setBackgroundColor("webFooter0", "#035354");
-			setPaddingTRBL("webFooter0", "45px", "0px", "45px", "0px");
-			setMarginTRBL("webFooter0", "100px", "0px", "0px", "0px");
-			// webFooter0Component + q scripts.
-			for(q = 0; q < 2; q++) {
-				
-				setWidth("webFooter0Component" + q, "40%");
-				setColor("webFooter0Component" + q, "#FFFFFF");
-				setSize("webFooter0Component" + q, "25px");
-				setFont("webFooter0Component" + q, "verdana");
-				setPaddingTRBL("webFooter0Component" + q, "0px", "5%", "0px", "5%");
-				setMarginTRBL("webFooter0Component" + q, "0px", "0px", "0px", "0px");
-				
-			}
-			// instagramButton scripts.
-			setWidth("instagramButton", "200px");
-			setPadding("instagramButton", "10px");
-			setBackgroundColor("instagramButton", "#2D97F5");
-			setBoxShadow("instagramButton", "-2px", "2px", "0px", "1px", "#0D57A5");
-			setUniformBorderRadius("instagramButton", "20px");
-			setPositionType("instagramButton", "relative");
-			setCursor("instagramButton", "pointer");
-			// youtubeButton scripts.
-			setWidth("youtubeButton", "200px");
-			setPadding("youtubeButton", "10px");
-			setBackgroundColor("youtubeButton", "#2D97F5");
-			setBoxShadow("youtubeButton", "-2px", "2px", "0px", "1px", "#0D57A5");
-			setUniformBorderRadius("youtubeButton", "20px");
-			setPositionType("youtubeButton", "relative");
-			setCursor("youtubeButton", "pointer");
-			// webFooter1 scripts.
-			setWidth("webFooter1", "100%");
-			setColor("webFooter1", "#FFFFFF");
-			setSize("webFooter1", "30px");
-			setFont("webFooter1", "verdana");
-			setBackgroundColor("webFooter1", "#079597");
-			setPaddingTRBL("webFooter1", "45px", "0px", "45px", "0px");
-			// webFooter2 scripts.
-			setWidth("webFooter2", "100%");
-			setColor("webFooter2", "#FFFFFF");
-			setSize("webFooter2", "30px");
-			setFont("webFooter2", "verdana");
-			setBackgroundColor("webFooter2", "#73C9CB");
-			setPaddingTRBL("webFooter2", "45px", "0px", "45px", "0px");
-			// Scripts for responsive design.
-			var executedResponsiveFooter = false;
-			function responsiveFooter() {
-				
-				if(window.innerWidth < 800) {
-					
-					for(q = 0; q < 2; q++) {
-						
-						changeClassName("webFooter0Component" + q, "unhiddenBlock");
-						setWidth("webFooter0Component" + q, "84%");
-						
-					}
-					
-					executedResponsiveFooter = true;
-					
-				}
-				
-				if(executedResponsiveFooter && window.innerWidth >= 800) {
-					
-					for(q = 0; q < 2; q++) {
-						
-						changeClassName("webFooter0Component" + q, "unhiddenInlineBlock");
-						setWidth("webFooter0Component" + q, "40%");
-						
-					}
-					
-					executedResponsiveFooter = false;
-					
-				}
-				
-			}
-			setInterval(responsiveFooter, 1/*ms*/);
-			
-		</script></div>
 		
 	</body>
 	
