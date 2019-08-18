@@ -6,18 +6,6 @@ function assignXY(object, xPrime, yPrime) {
 	
 }
 
-function isIndex() {
-	
-	if(document.location.href.indexOf("HTML") === -1) {
-	
-		return(true);
-		
-	}
-	
-	return(false);
-	
-}
-
 // Adding a footer:
 var footer = document.createElement("div");
 footer.id = "footerID";
@@ -25,6 +13,11 @@ footer.style.fontSize = "25px";
 footer.style.fontFamily = "verdana";
 footer.style.color = "#FFFFFF";
 document.body.appendChild(footer);
+
+// Variables:
+var b = new Array(2);
+b[0] = (document.location.href.indexOf("HTML") === -1);
+b[1] = (document.location.href.indexOf("Miscellaneous") != -1);
 
 // Adding a link to standard.css:
 var link = document.getElementsByTagName("link");
@@ -44,13 +37,13 @@ if(!detect) {
 	var standard = document.createElement("link");
 	standard.rel = "stylesheet";
 	standard.type = "text/css";
-	if(isIndex()) {
+	if(b[0]) {
 		
 		standard.href = "CSS/standard.css";
 		
 	} else {
 		
-		standard.href = "../CSS/standard.css";
+		standard.href = "../../CSS/standard.css";
 		
 	}
 	
@@ -91,10 +84,10 @@ for(q = 0; q < subFooterSubComponent.length; q++) {
 }
 
 // subFooterSubComponent[0]:
-subFooterSubComponent[0].innerHTML = "<font><b>Instagram</b></font><p style = 'font-size: 21px;'>Want to be notified on future projects or see my weekly trading recaps?</p>";
+subFooterSubComponent[0].innerHTML = "<font><b>Instagram</b></font><p style = 'font-size: 21px;'>Want to be notified on future projects or see my daily trading recaps?</p>";
 
 // subFooterSubComponent[1]:
-subFooterSubComponent[1].innerHTML = "<font><b>YouTube</b></font><p style = 'font-size: 21px;'>Want to trade live with me or see my weekly videos?</p>";
+subFooterSubComponent[1].innerHTML = "<font><b>YouTube</b></font><p style = 'font-size: 21px;'>Want to see my weekly trading lessons?</p>";
 
 // Adding buttons:
 var button = new Array(subFooterSubComponent.length);
@@ -131,14 +124,18 @@ var paypal = "<form action = 'https://www.paypal.com/cgi-bin/webscr' method = 'p
 subFooter[1].innerHTML = "<center><font><b>Feeling Generous?</b></font><p style = 'font-size: 25px; margin-left: 5%; margin-right: 5%;'>Consider showing your appreciation by donating to help fund our future complimentary trading courses. Any amount will be immensely appreciated.</p>" + paypal + "</center>";
 
 // subFooter[2]:
-var version = "v:2.1.0";
-if(isIndex()) {
+var version = "v:3.0.0";
+if(b[0]) {
 	
-	subFooter[2].innerHTML = "<center style = 'margin-left: 1%; margin-right: 1%;'><a class = 'removeDefaultHyperlinkStyle' href = 'HTML/changes.html'><b><i>SPYweb " + version + "</i></b></a></center>";
+	subFooter[2].innerHTML = "<center style = 'margin-left: 1%; margin-right: 1%;'><a class = 'removeDefaultHyperlinkStyle' href = 'HTML/Miscellaneous/changes.html'><b><i>SPYweb " + version + "</i></b></a></center>";
+	
+} else if(b[1]) {
+	
+	subFooter[2].innerHTML = "<center style = 'margin-left: 1%; margin-right: 1%;'><a class = 'removeDefaultHyperlinkStyle' href = 'changes.html'><b><i>SPYweb " + version + "</i></b></a></center>";
 	
 } else {
 	
-	subFooter[2].innerHTML = "<center style = 'margin-left: 1%; margin-right: 1%;'><a class = 'removeDefaultHyperlinkStyle' href = 'changes.html'><b><i>SPYweb " + version + "</i></b></a></center>";
+	subFooter[2].innerHTML = "<center style = 'margin-left: 1%; margin-right: 1%;'><a class = 'removeDefaultHyperlinkStyle' href = '../Miscellaneous/changes.html'><b><i>SPYweb " + version + "</i></b></a></center>";
 	
 }
 
