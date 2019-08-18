@@ -11,6 +11,8 @@
 		<meta name = "keywords" content = "spyweb, stocks, market, invest, learn, money, business">
 		<meta name = "description" content = "Learn about trading stocks and investing with a simple, straightforward, and interactive website for beginners.">
 		<meta name = "audience" content = "all">
+		<link rel = "stylesheet" type = "text/css" href = "CSS/index.css">
+		<link rel = "stylesheet" type = "text/css" href = "CSS/standard.css">
 		<link rel = "icon" href = "IMG/H/logoRGB(0,0,0).png">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src = "https://www.googletagmanager.com/gtag/js?id=UA-127759975-1"></script>
@@ -28,102 +30,89 @@
 	
 	<body>
 		
-		<noscript><center><div style = "display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -70%); -ms-transform: translate(-50%, -70%); padding: 25px; font-family: arial; font-size: 35px; color: #FFFFFF; text-shadow: -2px 2px 1px #000000; background-color: #3AB8FD; border: 3px solid #000000; border-radius: 5px;"><i><b>If you would like to use SPYweb, please enable JavaScript.</b></i></div></center><style>#pageContent{display:none;}</style></noscript>
+		<noscript><center><div style = "display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -70%); -ms-transform: translate(-50%, -70%); padding: 25px; font-family: arial; font-size: 35px; color: #FFFFFF; text-shadow: -2px 2px 1px #000000; background-color: #3AB8FD; border: 3px solid #000000; border-radius: 5px;"><i><b>If you would like to use SPYweb, please enable JavaScript.</b></i></div></center><style>#pageContent{display: none;}</style></noscript>
 		
 		<div id = "pageContent">
 			
 			<script src = "JS/navigation.js"></script>
+			<script src = "JS/cookieNotification.js" data-cfasync = "false"></script>
+			<script src = "JS/footer.js"></script>
 			
-			<div id = "welcomeMessageContainer" style = "width: 100%; padding: 150px 0px 150px 0px; background-color: rgba(0, 30, 150, 0.6); font-family: arial; color: #FFFFFF; text-shadow: -1px 1px 0px #111111;"><center><font id = "welcomeMessage0" style = "font-size: 65px;">Welcome to SPYweb!</font></center><center><p id = "welcomeMessage1" style = "line-height: 150%; padding: 0px 240px 0px 240px; font-size: 34px; color: #EFEFEF; text-shadow: -1px 1px 0px #111111;">Learn about trading stocks and investing with a simple, straightforward, and interactive website for beginners.</p></center></div>
+			<div id = "welcomeMessageContainer"><center><font id = "welcomeMessage0">Welcome to SPYweb!</font></center><center><p id = "welcomeMessage1" >Learn about trading stocks and investing with a simple, straightforward, and interactive website for beginners.</p></center></div>
 			
-			<script>
+			<div id = "webMain">
 				
-				var executedResponsiveWelcomeMessage = false;
-				function responsiveWelcomeMessage() {
-					
-					if(window.innerWidth < 700) {
-						
-						document.getElementById("welcomeMessageContainer").style.padding = "75px 0px 75px 0px";
-						document.getElementById("welcomeMessage0").style.fontSize = "45px";
-						document.getElementById("welcomeMessage1").style.fontSize = "24px";
-						document.getElementById("welcomeMessage1").style.padding = "0px 10px 0px 10px";
-						executedResponsiveWelcomeMessage = true;
-						
-					}
-					
-					if(executedResponsiveWelcomeMessage && window.innerWidth >= 700) {
-						
-						document.getElementById("welcomeMessageContainer").style.padding = "150px 0px 150px 0px";
-						document.getElementById("welcomeMessage0").style.fontSize = "65px";
-						document.getElementById("welcomeMessage1").style.fontSize = "34px";
-						document.getElementById("welcomeMessage1").style.padding = "0px 240px 0px 240px";
-						executedResponsiveWelcomeMessage = false;
-						
-					}
-					
-				}
+				<h1>Chapter 1: Introduction to Stocks</h1>
 				
-				setInterval(responsiveWelcomeMessage, 1/*ms*/);
-				
-			</script>
-			
-			<div id = "webMain" style = "padding: 35px 7% 65px 7%;">
-				
-				<div id = "webComponent0">
+				<div class = "row">
 					
-					<h1 id = "webComponent0Heading"><u>Chapter 1:</u> Introduction to Stocks</h1>
-					
-					<div id = "webComponent0Element0" style = "display: inline-block; vertical-align: top;">
+					<div class = "col">
 						
-						<img id = "webComponent0Element0Image" src = "IMG/H/webComponent0Element0Image.png">
-						
-						<div id = "webComponent0Element0Heading"><b>1. <a href = "HTML/chapter1_section1.html">Basic Methods of Analysis</a></b></div>
-						
-						<div id = "webComponent0Element0Description">
+						<div class = "icon">
 							
-							This section covers basic factors to consider when deciding to invest in a stock. These factors include: support and resistance levels, trends, indicators, rejection and confirmation, and candles.
+							<img class = "fill" src = "IMG/H/Chapter1/image11.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>1. <a href = "HTML/Chapter1/section1.html">Basic Methods of Analysis</a></h3>
+							
+							<p>This section will discuss the basics of technical analysis by going from support and resistance, to popular indicators that can help improve your trading.</p>
 							
 						</div>
 						
 					</div>
 					
-					<div id = "webComponent0Element1" style = "display: inline-block; vertical-align: top;">
+					<div class = "col">
 						
-						<img id = "webComponent0Element1Image" src = "IMG/H/webComponent0Element1Image.png">
-						
-						<div id = "webComponent0Element1Heading"><b>2. <a href = "HTML/chapter1_section2.html">News and Futures</a></b></div>
-						
-						<div id = "webComponent0Element1Description">
+						<div class = "icon">
 							
-							In this section, we discuss news and futures and their influence on the stock market. This includes exchange-traded funds (ETFs) and their associated futures.
+							<img class = "fill" src = "IMG/H/Chapter1/image12.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>2. <a href = "HTML/Chapter1/section2.html">News and Futures</a></h3>
+							
+							<p>In this section, we discuss news and futures and their influence on the stock market. This includes exchange-traded funds (ETFs) and their associated futures.</p>
 							
 						</div>
 						
 					</div>
 					
-					<div id = "webComponent0Element2" style = "display: inline-block; vertical-align: top;">
+					<div class = "col">
 						
-						<img id = "webComponent0Element2Image" src = "IMG/H/webComponent0Element2Image.png">
-						
-						<div id = "webComponent0Element2Heading"><b>3. <a href = "HTML/chapter1_section3.html">Getting Started</a></b></div>
-						
-						<div id = "webComponent0Element2Description">
+						<div class = "icon">
 							
-							Application of the basic methods of analayzing stocks helps to build up confidence and understanding when placing trades. Therefore, it's important to learn how to get started and which trading platform you should use to get started.
+							<img class = "fill" src = "IMG/H/Chapter1/image13.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>3. <a href = "HTML/Chapter1/section3.html">Getting Started</a></h3>
+							
+							<p>Application of the basic methods of analayzing stocks helps to build up confidence and understanding when placing trades. Therefore, it's important to learn how to get started and which trading platform you should use to get started.</p>
 							
 						</div>
 						
 					</div>
 					
-					<div id = "webComponent0Element3" style = "display: inline-block; vertical-align: top;">
+					<div class = "col">
 						
-						<img id = "webComponent0Element3Image" src = "IMG/H/webComponent0Element3Image.png">
-						
-						<div id = "webComponent0Element3Heading"><b>4. <a href = "HTML/chapter1_section4.html">Conclusion of Chapter 1</a></b></div>
-						
-						<div id = "webComponent0Element3Description">
+						<div class = "icon">
 							
-							The last section in Chapter 1 goes over what you should have learned from going through the first chapter, and it gives a few tips to help you when you start investing in the market.
+							<img class = "fill" src = "IMG/H/Chapter1/image14.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>4. <a href = "HTML/Chapter1/section4.html">Conclusion of Chapter 1</a></h3>
+							
+							<p>The last section in Chapter 1 goes over what you should have learned from going through the first chapter, and it gives a few tips to help you when you start investing in the market.</p>
 							
 						</div>
 						
@@ -131,61 +120,173 @@
 					
 				</div>
 				
-				<div id = "webComponent1" style = "padding-top: 35px;">
+				<h1>Chapter 2: Methods of Analysis</h1>
+				
+				<div class = "row">
 					
-					<h1 id = "webComponent1Heading"><u>Chapter 2:</u> Methods of Analysis</h1>
-					
-					<div id = "webComponent1Element0" style = "display: inline-block; vertical-align: top;">
+					<div class = "col">
 						
-						<img id = "webComponent1Element0Image" src = "IMG/H/webComponent1Element0Image.png">
-						
-						<div id = "webComponent1Element0Heading"><b>1. <a href = "HTML/chapter2_section1.html">Big Picture and Patterns</a></b></div>
-						
-						<div id = "webComponent1Element0Description">
+						<div class = "icon">
 							
-							In this section, we discuss the idea of big pictures, and we further analayze patterns and the various types you may encounter while trading.
+							<img class = "fill" src = "IMG/H/Chapter2/image21.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>1. <a href = "HTML/Chapter2/section1.html">Big Picture and Patterns</a></h3>
+							
+							<p>In this section, we discuss the idea of big pictures, and we further analayze patterns and the various types you may encounter while trading.</p>
 							
 						</div>
 						
 					</div>
 					
-					<div id = "webComponent1Element1" style = "display: inline-block; vertical-align: top;">
+					<div class = "col">
 						
-						<img id = "webComponent1Element1Image" src = "IMG/H/webComponent1Element1Image.png">
-						
-						<div id = "webComponent1Element1Heading"><b>2. <a href = "HTML/chapter2_section2.html">Entry, Exit, and Stop Loss</a></b></div>
-						
-						<div id = "webComponent1Element1Description">
+						<div class = "icon">
 							
-							In this section you will learn the values of entries, exits and stop losses. You will understand how these are utilized in trading and why they are essential to understand in all scenarios of analysis.
+							<img class = "fill" src = "IMG/H/Chapter2/image22.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>2. <a href = "HTML/Chapter2/section2.html">Entry, Exit, and Stop Loss</a></h3>
+							
+							<p>In this section you will learn the values of entries, exits and stop losses. You will understand how these are utilized in trading and why they are essential to understand in all scenarios of analysis.</p>
 							
 						</div>
 						
 					</div>
 					
-					<div id = "webComponent1Element2" style = "display: inline-block; vertical-align: top;">
+					<div class = "col">
 						
-						<img id = "webComponent1Element2Image" src = "IMG/H/webComponent1Element2Image.png">
-						
-						<div id = "webComponent1Element2Heading"><b>3. <a href = "HTML/chapter2_section3.html">Step-by-Step Analysis</a></b></div>
-						
-						<div id = "webComponent1Element2Description">
+						<div class = "icon">
 							
-							This section includes a step-by-step demonstration of everything discussed in this chapter. Going from a naked chart, a chart that has yet to be analysed, to a fully analyzed chart with my ideas of the trade.
+							<img class = "fill" src = "IMG/H/Chapter2/image23.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>3. <a href = "HTML/Chapter2/section3.html">Step-by-Step Analysis</a></h3>
+							
+							<p>This section includes a step-by-step demonstration of everything discussed in this chapter. Going from a naked chart, a chart that has yet to be analysed, to a fully analyzed chart with my ideas of the trade.</p>
 							
 						</div>
 						
 					</div>
 					
-					<div id = "webComponent1Element3" style = "display: inline-block; vertical-align: top;">
+					<div class = "col">
 						
-						<img id = "webComponent1Element3Image" src = "IMG/H/webComponent1Element3Image.png">
-						
-						<div id = "webComponent1Element3Heading"><b>4. <a href = "HTML/chapter2_section4.html">Personal Trading</a></b></div>
-						
-						<div id = "webComponent1Element3Description">
+						<div class = "icon">
 							
-							Now that all of the informative material is said, I would like to take some time and share with you all the biggest lessons I've learned from trading. This will be real and honest content when it comes to trading and what's actually going to improve your trading.
+							<img class = "fill" src = "IMG/H/Chapter2/image24.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>4. <a href = "HTML/Chapter2/section4.html">Personal Trading</a></h3>
+							
+							<p>Now that all of the informative material is said, I would like to take some time and share with you all the biggest lessons I've learned from trading. This will be real and honest content when it comes to trading and what's actually going to improve your trading.</p>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<h1>Chapter 3: Methodologies</h1>
+				
+				<div class = "row">
+					
+					<div class = "col">
+						
+						<div class = "icon">
+							
+							<img class = "fill" src = "IMG/H/Chapter3/image31.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>1. <a href = "HTML/Chapter3/section1.html">The Process of Trading</a></h3>
+							
+							<p>The trader's process, the most important section, should be understood and read thoroughly. This section gives concepts around trading and the ways traders can have an edge.</p>
+							
+						</div>
+						
+					</div>
+					
+					<div class = "col">
+						
+						<div class = "icon">
+							
+							<img class = "fill" src = "IMG/H/Chapter3/image32.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>2. <a href = "HTML/Chapter3/section2.html">Penny Stocks</a></h3>
+							
+							<p>This section details the methodologies and concepts for trading small cap stocks, as well as my personal trades and experiences with them.</p>
+							
+						</div>
+						
+					</div>
+					
+					<div class = "col">
+						
+						<div class = "icon">
+							
+							<img class = "fill" src = "IMG/H/Chapter3/image33.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>3. <a href = "HTML/Chapter3/section3.html">Swing Trading</a></h3>
+							
+							<p>This section gives ideas on holding a stock for larger period of time. It's very different than day trading, so it has separate ideas that should be understood.</p>
+							
+						</div>
+						
+					</div>
+					
+					<div class = "col">
+						
+						<div class = "icon">
+							
+							<img class = "fill" src = "IMG/H/Chapter3/image34.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>4. <a href = "HTML/Chapter3/section4.html">Day Trading</a></h3>
+							
+							<p>This section includes details regarding day trading mid/large cap stocks, keeping it simple and effective without the "fluff" you will see in many other explanations.</p>
+							
+						</div>
+						
+					</div>
+					
+					<div class = "col">
+						
+						<div class = "icon">
+							
+							<img class = "fill" src = "IMG/H/Chapter3/image35.png">
+							
+						</div>
+						
+						<div class = "description">
+							
+							<h3>5. <a href = "HTML/Chapter3/section5.html">Conclusion of Chapter 3</a></h3>
+							
+							<p>A wrap-up of all the sections with some ideas of my own, with a bonus PDF that's the hidden gem in this chapter.</p>
 							
 						</div>
 						
@@ -194,158 +295,6 @@
 				</div>
 				
 			</div>
-			
-			<script>
-				
-				for(u = 0; u < 2; u++) {
-					
-					document.getElementById("webComponent" + u).style.textAlign = "center";
-					document.getElementById("webComponent" + u + "Heading").style.fontSize = "45px";
-					document.getElementById("webComponent" + u + "Heading").style.color = "rgb(3, 90, 255)";
-					document.getElementById("webComponent" + u + "Heading").style.fontFamily = "arial";
-					
-					for(v = 0; v < 4; v++) {
-						
-						document.getElementById("webComponent" + u + "Element" + v).style.width = "350px";
-						document.getElementById("webComponent" + u + "Element" + v).style.backgroundColor = "#FFFFFF";
-						document.getElementById("webComponent" + u + "Element" + v).style.borderRadius = "10px 10px 5px 5px";
-						document.getElementById("webComponent" + u + "Element" + v).style.boxShadow = "-1px -1px 10px 0px rgba(0, 0, 0, 0.40)";
-						document.getElementById("webComponent" + u + "Element" + v).style.margin = "20px 1% 0px 0px";
-						document.getElementById("webComponent" + u + "Element" + v).style.textAlign = "left";
-						document.getElementById("webComponent" + u + "Element" + v + "Image").style.width = "100%";
-						document.getElementById("webComponent" + u + "Element" + v + "Image").style.height = "263px";
-						document.getElementById("webComponent" + u + "Element" + v + "Image").borderRadius = "10px 10px 0px 0px";
-						document.getElementById("webComponent" + u + "Element" + v + "Heading").style.fontSize = "20px";
-						document.getElementById("webComponent" + u + "Element" + v + "Heading").style.fontFamily = "arial";
-						document.getElementById("webComponent" + u + "Element" + v + "Heading").style.margin = "10px 10px 10px 10px";
-						document.getElementById("webComponent" + u + "Element" + v + "Description").style.lineHeight = "150%";
-						document.getElementById("webComponent" + u + "Element" + v + "Description").style.fontFamily = "arial";
-						document.getElementById("webComponent" + u + "Element" + v + "Description").style.color = "#000000";
-						document.getElementById("webComponent" + u + "Element" + v + "Description").style.margin = "12px 20px 0px 20px";
-						
-					}
-					
-				}
-				
-				var epsilon = 50;
-				var ell = 4;
-				var headingHeightArray0 = new Array(ell);
-				var descriptionHeightArray0 = new Array(ell);
-				
-				for(q = 0; q < ell; q++) {
-					
-					headingHeightArray0[q] = document.getElementById("webComponent0Element" + q + "Heading").clientHeight;
-					descriptionHeightArray0[q] = document.getElementById("webComponent0Element" + q + "Description").clientHeight;
-					
-				}
-				
-				var headingHeightArray0Maximum = headingHeightArray0[0];
-				var descriptionHeightArray0Maximum = descriptionHeightArray0[0];
-				
-				for(q = 0; q < ell; q++) {
-					
-					if(headingHeightArray0Maximum < headingHeightArray0[q]) {
-						
-						headingHeightArray0Maximum = headingHeightArray0[q];
-						
-					}
-					
-					if(descriptionHeightArray0Maximum < descriptionHeightArray0[q]) {
-						
-						descriptionHeightArray0Maximum = descriptionHeightArray0[q];
-						
-					}
-					
-				}
-				
-				for(q = 0; q < ell; q++) {
-
-					document.getElementById("webComponent0Element" + q + "Heading").style.height = headingHeightArray0Maximum + "px";
-					document.getElementById("webComponent0Element" + q + "Description").style.height = descriptionHeightArray0Maximum + epsilon + "px";
-					
-				}
-				
-				var ell = 4;
-				var headingHeightArray1 = new Array(ell);
-				var descriptionHeightArray1 = new Array(ell);
-				
-				for(q = 0; q < ell; q++) {
-					
-					headingHeightArray1[q] = document.getElementById("webComponent1Element" + q + "Heading").clientHeight;
-					descriptionHeightArray1[q] = document.getElementById("webComponent1Element" + q + "Description").clientHeight;
-					
-				}
-				
-				var headingHeightArray1Maximum = headingHeightArray1[0];
-				var descriptionHeightArray1Maximum = descriptionHeightArray1[0];
-				
-				for(q = 0; q < ell; q++) {
-					
-					if(headingHeightArray1Maximum < headingHeightArray1[q]) {
-						
-						headingHeightArray1Maximum = headingHeightArray1[q];
-						
-					}
-					
-					if(descriptionHeightArray1Maximum < descriptionHeightArray1[q]) {
-						
-						descriptionHeightArray1Maximum = descriptionHeightArray1[q];
-						
-					}
-					
-				}
-				
-				for(q = 0; q < ell; q++) {
-					
-					document.getElementById("webComponent1Element" + q + "Heading").style.height = headingHeightArray1Maximum + "px";
-					document.getElementById("webComponent1Element" + q + "Description").style.height = descriptionHeightArray1Maximum + epsilon + "px";
-					
-				}
-				
-				var executedResponsiveContent = false;
-				function responsiveContent() {
-					
-					if(window.innerWidth < 560) {
-						
-						for(u = 0; u < 2; u++) {
-							
-							for(v = 0; v < 4; v++) {
-								
-								document.getElementById("webComponent" + u + "Element" + v).style.display = "block";
-								document.getElementById("webComponent" + u + "Element" + v).style.width = "100%";
-								
-							}
-							
-						}
-						
-						executedResponsiveContent = true;
-						
-					}
-					
-					if(executedResponsiveContent && window.innerWidth >= 560) {
-						
-						for(u = 0; u < 2; u++) {
-							
-							for(v = 0; v < 4; v++) {
-								
-								document.getElementById("webComponent" + u + "Element" + v).style.display = "inline-block";
-								document.getElementById("webComponent" + u + "Element" + v).style.width = "375px";
-								
-							}
-							
-						}
-						
-						executedResponsiveContent = false;
-						
-					}
-					
-				}
-				
-				setInterval(responsiveContent, 1/*ms*/);
-				
-			</script>
-			
-			<script src = "JS/footer.js"></script>
 			
 		</div>
 		
