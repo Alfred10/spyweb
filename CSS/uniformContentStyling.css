@@ -1,0 +1,49 @@
+.textContent {
+	
+	font-size: 22px;
+	line-height: 200%;
+	padding: 35px 7% 25px 7%;
+	font-family: verdana;
+	
+}
+
+.sectionName {
+	
+	font-size: 45px;
+	color: rgb(3, 90, 255);
+	
+}
+
+.responsiveImage {
+	
+	width: 70%;
+	
+}
+
+@media only screen and (max-width: 799px) {
+	
+	.responsiveImage {
+		
+		width: 100%;
+		
+	}
+	
+}
+
+.responsiveVideo {
+	
+	width: 70%;
+	height: 515px;
+	
+}
+
+@media only screen and (max-width: 799px) {
+	
+	.responsiveVideo {
+		
+		width: 100%;
+		height: 315px;
+		
+	}
+	
+}
