@@ -179,24 +179,29 @@ function balance() {
 		if(count % 2 === 0) {
 			
 			tripleBar.style.paddingTop = (1 + parseInt(tripleBar.style.paddingTop)) + "px";
+			count++;
 			
 		} else {
 			
 			tripleBar.style.paddingBottom = (1 + parseInt(tripleBar.style.paddingBottom)) + "px";
+			count++;
 			
 		}
 		
 	}
 	
+	count = 0;
 	while(tripleBar.clientHeight > navigation.clientHeight) {
 		
 		if(count % 2 === 0) {
 			
 			tripleBar.style.paddingTop = (parseInt(tripleBar.style.paddingTop) - 1) + "px";
+			count++;
 			
 		} else {
 			
 			tripleBar.style.paddingBottom = (parseInt(tripleBar.style.paddingBottom) - 1) + "px";
+			count++;
 			
 		}
 		
