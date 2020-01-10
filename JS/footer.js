@@ -124,7 +124,7 @@ var paypal = "<form action = 'https://www.paypal.com/cgi-bin/webscr' method = 'p
 subFooter[1].innerHTML = "<center><font><b>Feeling Generous?</b></font><p style = 'font-size: 25px; margin-left: 5%; margin-right: 5%;'>Consider showing your appreciation by donating to help fund our future complimentary trading courses. Any amount will be immensely appreciated.</p>" + paypal + "</center>";
 
 // subFooter[2]:
-var version = "v:3.0.0";
+var version = "v:3.1.0";
 if(b[0]) {
 	
 	subFooter[2].innerHTML = "<center style = 'margin-left: 1%; margin-right: 1%;'><a class = 'removeDefaultHyperlinkStyle' href = 'HTML/Miscellaneous/changes.html'><b><i>SPYweb " + version + "</i></b></a></center>";

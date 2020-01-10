@@ -222,12 +222,12 @@ submenu.style.left = "0px";
 submenu.style.top = "50px";
 submenu.style.width = "100%";
 var submenuHeightError = 50;
-setInterval(function() {submenu.style.height = window.innerHeight - submenuHeightError + "px";}, 1/*ms*/);
 submenu.style.overflowY = "auto";
 navigation.appendChild(submenu);
 
 // Adding sublinks:
 var numberOfSublinks = 9;
+setInterval(function() {if(parseInt(navigation.style.height) * numberOfSublinks > window.innerHeight) {submenu.style.height = window.innerHeight - submenuHeightError + "px";} else {submenu.style.height = parseInt(navigation.style.height) * numberOfSublinks + "px";}}, 1/*ms*/);
 var sublink = new Array(numberOfSublinks);
 var sublinkLabel = new Array(sublink.length);
 sublinkLabel[0] = "<font class = 'nonWrappable'>&emsp;Home</font>";
@@ -278,7 +278,7 @@ if(b[0]) {
 	
 }
 
-for(q = 0; q < sublink.length; q++) {
+for(q = 0; q < 9; q++) {
 	
 	sublink[q] = document.createElement("a");
 	sublink[q].href = sublinkHyperlink[q];
